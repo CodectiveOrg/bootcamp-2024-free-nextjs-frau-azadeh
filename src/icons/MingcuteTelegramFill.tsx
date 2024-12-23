@@ -1,4 +1,3 @@
-
 import React, { SVGProps } from "react";
 
 export function MingcuteTelegramFill(props: SVGProps<SVGSVGElement>) {

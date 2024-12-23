@@ -1,4 +1,3 @@
-
 import React, { SVGProps } from "react";
 
 export function MingcuteYoutubeFill(props: SVGProps<SVGSVGElement>) {
