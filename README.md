@@ -2,8 +2,6 @@
 
 Welcome to Mein-Arzt (My Doctor), a modern and responsive medical assistant app built with the latest web technologies! This project is crafted to deliver a seamless experience for users looking for medical assistance or services.
 
-# Live Demo 🚀
-
 ## 🌟 Features
 
 ⚡ Fast and Scalable: Powered by Next.js, ensuring server-side rendering and optimized performance.
@@ -20,7 +18,7 @@ Prettier: Code formatter for maintaining code consistency and style.
 
 ## 🌐 Live Demo
 
-Check out the live demo: mein-arzt.vercel.app
+Check out the live [demo]: (mein-arzt.vercel.app)
 
 Developed with 🌻 by Azadeh Sharifi Soltani
 Feel free to connect and collaborate!
