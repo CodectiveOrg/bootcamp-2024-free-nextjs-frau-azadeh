@@ -22,4 +22,3 @@ Check out the live [demo]: (https://mein-arzt.vercel.app)
 
 Developed with 🌻 by Azadeh Sharifi Soltani
 Feel free to connect and collaborate!
-
