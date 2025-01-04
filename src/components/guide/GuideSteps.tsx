@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styles from './guideSteps.module.css';
+import React from "react";
+import styles from "./guideSteps.module.css";
 
 const GuideSteps: React.FC = () => {
   return (

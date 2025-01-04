@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa'; // آیکن‌های React Icons
-import styles from './footer.module.css';
+import React from "react";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"; // آیکن‌های React Icons
+import styles from "./footer.module.css";
 
 const FooterComponent = () => {
   return (
@@ -10,9 +10,12 @@ const FooterComponent = () => {
         <div className={styles.column}>
           <h3 className={styles.title}>درباره کلینیک دیابلند</h3>
           <p>
-          در دیابلند، هدف ما ارائه خدمات جامع و تخصصی برای مدیریت و پیشگیری از دیابت است.
-           ما با بهره‌گیری از تیمی متعهد و متخصص، محیطی امن و دوستانه برای مراجعین خود فراهم کرده‌ایم.
-           دیابلند با ارائه خدماتی نظیر مشاوره پزشکی، پایش منظم قند خون، آموزش‌های لازم برای مدیریت دیابت و توصیه‌های تغذیه‌ای، به دنبال بهبود کیفیت زندگی شماست.          </p>
+            در دیابلند، هدف ما ارائه خدمات جامع و تخصصی برای مدیریت و پیشگیری از
+            دیابت است. ما با بهره‌گیری از تیمی متعهد و متخصص، محیطی امن و
+            دوستانه برای مراجعین خود فراهم کرده‌ایم. دیابلند با ارائه خدماتی
+            نظیر مشاوره پزشکی، پایش منظم قند خون، آموزش‌های لازم برای مدیریت
+            دیابت و توصیه‌های تغذیه‌ای، به دنبال بهبود کیفیت زندگی شماست.{" "}
+          </p>
           <p className={styles.contact}>فکس: (+۹۸۲۱) ۲۲۲۲۲۲۲۲ </p>
           <div className={styles.socialIcons}>
             <a href="https://facebook.com" aria-label="Facebook">

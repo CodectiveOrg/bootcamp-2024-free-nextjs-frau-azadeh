@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styles from './StatsCards.module.css';
-import { FaUserMd, FaHospital, FaFileAlt, FaAward } from 'react-icons/fa';
+import React from "react";
+import styles from "./StatsCards.module.css";
+import { FaUserMd, FaHospital, FaFileAlt, FaAward } from "react-icons/fa";
 
 interface StatCardProps {
   icon: React.ReactNode;
@@ -12,7 +12,13 @@ interface StatCardProps {
   link: string;
 }
 
-const StatCard: React.FC<StatCardProps> = ({ icon, number, title, description, link }) => {
+const StatCard: React.FC<StatCardProps> = ({
+  icon,
+  number,
+  title,
+  description,
+  link,
+}) => {
   return (
     <div className={styles.card}>
       <div className={styles.icon}>{icon}</div>

@@ -12,19 +12,18 @@ import StatsCards from "@/components/stats/StatsCards";
 export default function Home(): ReactElement {
   return (
     <div className={styles.home}>
-      <SliderComponent/>
+      <SliderComponent />
       <br></br>
       <h1>
         <MyDoctorLogo />
         دکتر من
       </h1>
       <GlobalSearchBoxComponent />
-      <div className={styles.history}>
-      </div>
+      <div className={styles.history}></div>
       <br></br>
-      <GuideSteps/>
+      <GuideSteps />
       <br></br>
-      <StatsCards/>
+      <StatsCards />
       <br></br>
       <div className={styles.container}>
         <FAQsAndReviews />

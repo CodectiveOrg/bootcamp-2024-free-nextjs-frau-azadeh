@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import styles from './ReviewsSlider.module.css';
+import React, { useState } from "react";
+import styles from "./ReviewsSlider.module.css";
 
 interface Review {
   name: string;
@@ -14,32 +14,33 @@ const ReviewsSlider: React.FC = () => {
 
   const reviews: Review[] = [
     {
-      name: 'فاطمه احمدی',
+      name: "فاطمه احمدی",
       comment:
-        'من از خدمات این کلینیک استفاده کردم و نتیجه فوق‌العاده‌ای گرفتم.',
-      image: '/assets/person/old-woman.webp',
+        "من از خدمات این کلینیک استفاده کردم و نتیجه فوق‌العاده‌ای گرفتم.",
+      image: "/assets/person/old-woman.webp",
     },
     {
-      name: 'علی کریمی',
+      name: "علی کریمی",
       comment:
-        'تجربه‌ای فوق‌العاده با تیم حرفه‌ای. حتماً این کلینیک را به دیگران توصیه می‌کنم.',
-      image: '/assets/person/old-man.webp',
+        "تجربه‌ای فوق‌العاده با تیم حرفه‌ای. حتماً این کلینیک را به دیگران توصیه می‌کنم.",
+      image: "/assets/person/old-man.webp",
     },
     {
-      name: 'مهتا حسینی',
-      comment: 'پرسنل بسیار مهربان و حرفه‌ای هستند. خدمات باکیفیت و عالی.',
-      image: '/assets/person/girl.webp',
+      name: "مهتا حسینی",
+      comment: "پرسنل بسیار مهربان و حرفه‌ای هستند. خدمات باکیفیت و عالی.",
+      image: "/assets/person/girl.webp",
     },
     {
-      name: 'الهام رضایی',
-      comment: 'خدمات این کلینیک بی‌نظیر است. واقعاً از نتیجه کارشان راضی هستم.',
-      image: '/assets/person/woman.webp',
-    },
-    {
-      name: 'سعید پارسا',
+      name: "الهام رضایی",
       comment:
-        'تجربه من با کلینیک بسیار خوب بود. پرسنل فوق‌العاده حرفه‌ای و دوستانه بودند و خدماتشان در پوست بسیار با کیفیت بود.',
-      image: '/assets/person/man.webp',
+        "خدمات این کلینیک بی‌نظیر است. واقعاً از نتیجه کارشان راضی هستم.",
+      image: "/assets/person/woman.webp",
+    },
+    {
+      name: "سعید پارسا",
+      comment:
+        "تجربه من با کلینیک بسیار خوب بود. پرسنل فوق‌العاده حرفه‌ای و دوستانه بودند و خدماتشان در پوست بسیار با کیفیت بود.",
+      image: "/assets/person/man.webp",
     },
   ];
 
@@ -49,7 +50,7 @@ const ReviewsSlider: React.FC = () => {
 
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
+      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1,
     );
   };
 

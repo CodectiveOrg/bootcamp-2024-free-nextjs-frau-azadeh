@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import styles from './Header.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import styles from "./Header.module.css";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
@@ -19,13 +19,13 @@ const HeaderComponent: React.FC = () => {
       <h1 className={styles.title}>دیابلند</h1>
 
       {/* منو */}
-      <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ''}`}>
+      <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
           <li>
             <Link
               href="/"
               className={`${styles.navLink} ${
-                pathname === '/' ? styles.active : ''
+                pathname === "/" ? styles.active : ""
               }`}
             >
               خانه
@@ -35,7 +35,7 @@ const HeaderComponent: React.FC = () => {
             <Link
               href="/about"
               className={`${styles.navLink} ${
-                pathname === '/about' ? styles.active : ''
+                pathname === "/about" ? styles.active : ""
               }`}
             >
               درباره ما
@@ -45,7 +45,7 @@ const HeaderComponent: React.FC = () => {
             <Link
               href="/contact"
               className={`${styles.navLink} ${
-                pathname === '/contact' ? styles.active : ''
+                pathname === "/contact" ? styles.active : ""
               }`}
             >
               تماس با ما
@@ -55,7 +55,7 @@ const HeaderComponent: React.FC = () => {
             <Link
               href="/schedule"
               className={`${styles.navLink} ${
-                pathname === '/schedule' ? styles.active : ''
+                pathname === "/schedule" ? styles.active : ""
               }`}
             >
               تعیین وقت
