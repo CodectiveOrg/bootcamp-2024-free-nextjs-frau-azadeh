@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import styles from "./FAQsAndReviews.module.css";
-import ReviewsSlider from "../review/ReviewsSlider";
 
 interface FAQ {
   question: string;
