@@ -6,7 +6,6 @@ import SliderComponent from "@/components/slider/SliderComponent";
 import FAQsAndReviews from "@/components/faq/FAQsAndReviews";
 import ReviewsSlider from "@/components/review/ReviewsSlider";
 import GuideSteps from "@/components/guide/GuideSteps";
-import { Stats } from "fs";
 import StatsCards from "@/components/stats/StatsCards";
 
 export default function Home(): ReactElement {
