@@ -23,11 +23,10 @@
 }
 
 .image {
-  width: 100px;
-  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .name {
@@ -67,6 +66,7 @@
 .control:hover {
   background-color: #3a033d;
 }
+
 @media (max-width: 768px) {
   .slider {
     width: 80%;

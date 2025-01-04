@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image"; // اضافه کردن تگ Image
 import styles from "./ReviewsSlider.module.css";
 
 interface Review {
@@ -58,9 +59,11 @@ const ReviewsSlider: React.FC = () => {
     <div className={styles.slider}>
       <h2 className={styles.title}>نظرات مراجعه کنندگان :</h2>
       <div className={styles.card}>
-        <img
+        <Image
           src={reviews[currentIndex].image}
           alt={reviews[currentIndex].name}
+          width={100}
+          height={100}
           className={styles.image}
         />
         <h3 className={styles.name}>{reviews[currentIndex].name}</h3>
