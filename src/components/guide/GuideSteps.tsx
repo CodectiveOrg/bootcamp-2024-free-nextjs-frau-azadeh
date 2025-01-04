@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image"; // اضافه کردن ایمپورت Image
 import styles from "./guideSteps.module.css";
 
 const GuideSteps: React.FC = () => {
@@ -14,7 +15,13 @@ const GuideSteps: React.FC = () => {
         <div className={styles.guide}>راهنمای ترخیص و دریافت مدارک</div>
       </div>
       <div className={styles.image}>
-        <img src="/assets/guide/doctor-guide.webp" alt="راهنمای مراجعین" />
+        <Image
+          src="/assets/guide/doctor-guide.webp" // مسیر تصویر
+          alt="راهنمای مراجعین"
+          width={400} // عرض تصویر
+          height={400} // ارتفاع تصویر
+          className={styles.img} // کلاس CSS برای استایل
+        />
       </div>
       <div className={styles.right}>
         <div className={styles.guide}>راهنمای ملاقات</div>

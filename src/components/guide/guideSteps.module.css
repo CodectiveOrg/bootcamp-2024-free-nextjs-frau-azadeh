@@ -1,76 +1,75 @@
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 2rem;
-}
-
-.left,
-.right {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.image {
-  flex: 0 0 400px; /* عرض ثابت برای تصویر */
-  max-width: 400px;
-  text-align: center;
-}
-
-.image img {
-  width: 100%;
-  max-width: 400px; /* اندازه حداکثر */
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 2; /* تصویر بالاتر از عناصر دیگر */
-  position: relative;
-}
-
-.guide {
-  font-size: 1.2rem;
-  color: #4a044e;
-  padding: 0.5rem 1rem;
-  background-color: #f9f9f9;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* ستون در حالت موبایل */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
   }
-
+  
   .left,
   .right {
-    width: 100%; /* عرض کامل */
-    text-align: center;
-  }
-
-  .image img {
-    max-width: 400px; /* کوچک‌تر کردن تصویر در موبایل */
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    flex-wrap: wrap;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
   }
-
-  .left,
-  .right {
-    flex: 1 1 45%; /* تقسیم عرض به دو ستون */
+  
+  .image {
+    flex: 0 0 400px; /* عرض ثابت برای تصویر */
+    max-width: 400px;
+    text-align: center;
   }
-
-  .image img {
-    max-width: 350px; /* اندازه متوسط برای تبلت */
+  
+  .img {
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 2; /* تصویر بالاتر از عناصر دیگر */
+    position: relative;
   }
-}
+  
+  .guide {
+    font-size: 1.2rem;
+    color: #4a044e;
+    padding: 0.5rem 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* ستون در حالت موبایل */
+      align-items: center;
+      width: 85%;
+    }
+  
+    .left,
+    .right {
+      width: 100%; /* عرض کامل */
+      text-align: center;
+    }
+  
+    .img {
+      max-width: 300px; /* کوچک‌تر کردن تصویر در موبایل */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .left,
+    .right {
+      flex: 1 1 45%; /* تقسیم عرض به دو ستون */
+    }
+  
+    .img {
+      max-width: 350px; /* اندازه متوسط برای تبلت */
+    }
+  }
+  
