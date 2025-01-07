@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "./Header.module.css";
+import styles from "./header.module.css";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
