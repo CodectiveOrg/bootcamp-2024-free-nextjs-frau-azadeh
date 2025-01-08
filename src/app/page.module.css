@@ -44,7 +44,6 @@
   width: 100%;
 }
 
-/* حالت موبایل */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
