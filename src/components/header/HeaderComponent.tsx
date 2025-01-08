@@ -53,7 +53,7 @@ const HeaderComponent: React.FC = () => {
           </li>
           <li>
             <Link
-              href="/schedule"
+              href="/search"
               className={`${styles.navLink} ${
                 pathname === "/search" ? styles.active : ""
               }`}
