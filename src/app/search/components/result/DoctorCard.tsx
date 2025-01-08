@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import styles from './doctorCard.module.css';
+import React from "react";
+import styles from "./doctorCard.module.css";
 
 interface DoctorCardProps {
   name: string;

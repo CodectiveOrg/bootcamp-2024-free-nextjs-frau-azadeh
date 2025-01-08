@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useFilterContext } from '../../context/FilterContext';
-import DoctorCard from './DoctorCard';
+import React from "react";
+import { useFilterContext } from "../../context/FilterContext";
+import DoctorCard from "./DoctorCard";
 
 const DoctorsList: React.FC = () => {
   const { doctors, genderFilter } = useFilterContext();
 
   // فیلتر کردن دکترها بر اساس جنسیت
   const filteredDoctors = doctors.filter((doctor) =>
-    genderFilter ? doctor.gender === genderFilter : true
+    genderFilter ? doctor.gender === genderFilter : true,
   );
 
   return (

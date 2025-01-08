@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useFilterContext } from '../../context/FilterContext';
+import React from "react";
+import { useFilterContext } from "../../context/FilterContext";
 
 const FilterGender: React.FC = () => {
   const { genderFilter, setGenderFilter } = useFilterContext();
@@ -14,34 +14,34 @@ const FilterGender: React.FC = () => {
     <div>
       <h3>فیلتر بر اساس جنسیت:</h3>
       <button
-        onClick={() => handleGenderChange('زن')}
+        onClick={() => handleGenderChange("زن")}
         style={{
-          backgroundColor: genderFilter === 'زن' ? '#4CAF50' : '#f0f0f0',
-          padding: '10px',
-          margin: '5px',
-          borderRadius: '5px',
+          backgroundColor: genderFilter === "زن" ? "#4CAF50" : "#f0f0f0",
+          padding: "10px",
+          margin: "5px",
+          borderRadius: "5px",
         }}
       >
         زن
       </button>
       <button
-        onClick={() => handleGenderChange('مرد')}
+        onClick={() => handleGenderChange("مرد")}
         style={{
-          backgroundColor: genderFilter === 'مرد' ? '#4CAF50' : '#f0f0f0',
-          padding: '10px',
-          margin: '5px',
-          borderRadius: '5px',
+          backgroundColor: genderFilter === "مرد" ? "#4CAF50" : "#f0f0f0",
+          padding: "10px",
+          margin: "5px",
+          borderRadius: "5px",
         }}
       >
         مرد
       </button>
       <button
-        onClick={() => handleGenderChange('')}
+        onClick={() => handleGenderChange("")}
         style={{
-          backgroundColor: genderFilter === '' ? '#4CAF50' : '#f0f0f0',
-          padding: '10px',
-          margin: '5px',
-          borderRadius: '5px',
+          backgroundColor: genderFilter === "" ? "#4CAF50" : "#f0f0f0",
+          padding: "10px",
+          margin: "5px",
+          borderRadius: "5px",
         }}
       >
         همه
