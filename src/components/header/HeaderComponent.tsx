@@ -55,7 +55,7 @@ const HeaderComponent: React.FC = () => {
             <Link
               href="/schedule"
               className={`${styles.navLink} ${
-                pathname === "/schedule" ? styles.active : ""
+                pathname === "/search" ? styles.active : ""
               }`}
             >
               تعیین وقت
