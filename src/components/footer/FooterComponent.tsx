@@ -1,74 +1,65 @@
-import { ReactElement } from "react";
-
-import Image from "next/image";
-import Link from "next/link";
-
-import idk from "@/assets/logo/idk.svg";
-import certificateLogo from "@/assets/logo/certificate.svg";
-import enamadLogo from "@/assets/logo/enamad.svg";
-
-import MingcuteLinkedinFill from "@/icons/MingcuteLinkedinFill";
-import MingcuteTelegramFill from "@/icons/MingcuteTelegramFill";
-import MingcuteYoutubeFill from "@/icons/MingcuteYoutubeFill";
-
+import React from "react";
+import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa"; // آیکن‌های React Icons
 import styles from "./footer.module.css";
 
-export default function FooterComponent(): ReactElement {
+const FooterComponent = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.writings}>
-        <div className={styles.logo}>دکتر من</div>
-        <p className={styles.description}>
-          تجربه مشاوره آنلاین و دریافت نوبت از بهترین پزشکان و بیمارستان‌های
-          ایران
-        </p>
+      <div className={styles.container}>
+        {/* بخش درباره بیمارستان */}
+        <div className={styles.column}>
+          <h3 className={styles.title}>درباره کلینیک دیابلند</h3>
+          <p>
+            در دیابلند، هدف ما ارائه خدمات جامع و تخصصی برای مدیریت و پیشگیری از
+            دیابت است. ما با بهره‌گیری از تیمی متعهد و متخصص، محیطی امن و
+            دوستانه برای مراجعین خود فراهم کرده‌ایم. دیابلند با ارائه خدماتی
+            نظیر مشاوره پزشکی، پایش منظم قند خون، آموزش‌های لازم برای مدیریت
+            دیابت و توصیه‌های تغذیه‌ای، به دنبال بهبود کیفیت زندگی شماست.{" "}
+          </p>
+          <p className={styles.contact}>فکس: (+۹۸۲۱) ۲۲۲۲۲۲۲۲ </p>
+          <div className={styles.socialIcons}>
+            <a href="https://facebook.com" aria-label="Facebook">
+              <FaFacebook />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+
+        {/* بخش راهنمای مراجعین */}
+        <div className={styles.column}>
+          <h3 className={styles.title}>راهنمای مراجعین</h3>
+          <ul>
+            <li>پارکینگ و امکانات رفاهی</li>
+            <li>حقوق بیمار</li>
+            <li>ایمنی بیمار</li>
+            <li>خدمات پشتیبانی درمانی</li>
+            <li>اقامت در تهران</li>
+          </ul>
+        </div>
+
+        {/* بخش اطلاعات تماس */}
+        <div className={styles.column}>
+          <h3 className={styles.title}>اطلاعات تماس</h3>
+          <p>آدرس: سعادت آباد، بین چهارراه سرو </p>
+          <p>کد پستی: ۱۱۱۱۱۱۱۱</p>
+          <p>تلفن گویا: (+۹۸۲۱) ۲۲۲۲۲۲۲۲ </p>
+          <p>ایمیل: diabland@diabland.ir</p>
+        </div>
       </div>
-      <div className={styles.visuals}>
-        <ul className={styles.certificates}>
-          <li>
-            <Link href="#">
-              <Image src={idk} alt="IDK Logo" />
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <Image src={certificateLogo} alt="Certificate Logo" />
-            </Link>
-          </li>
-          <li>
-            <Link href="#">
-              <Image src={enamadLogo} alt="Enamad Logo" />
-            </Link>
-          </li>
-        </ul>
-        <ul className={styles.socials}>
-          <li>
-            <Link href="https://t.me/Codective" target="_blank">
-              <MingcuteTelegramFill />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.linkedin.com/in/bijanprogrammer/"
-              target="_blank"
-            >
-              <MingcuteLinkedinFill />
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="https://www.youtube.com/@BijanProgrammer"
-              target="_blank"
-            >
-              <MingcuteYoutubeFill />
-            </Link>
-          </li>
-        </ul>
+
+      <div className={styles.footerBottom}>
+        <p>تمام حقوق مادی و معنوی این سایت متعلق به دیابلند می باشد </p>
       </div>
-      <p className={styles.copy}>
-        تمامی حقوق مادی و معنوی این وب‌سایت، خدمات و محتوای مربوط به آن متعلق به
-        من می‌باشد!
-      </p>
     </footer>
   );
-}
+};
+
+export default FooterComponent;

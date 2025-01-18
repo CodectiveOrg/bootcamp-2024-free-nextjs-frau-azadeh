@@ -1,40 +1,52 @@
 .home {
-  display: grid;
   justify-items: center;
   align-content: center;
   gap: 2rem;
-
   min-block-size: 100%;
+}
 
-  h1 {
-    display: inline-flex;
+.home h1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2rem;
+  color: #4a044e;
+}
+
+.home h1 svg {
+  font-size: 1.5em;
+}
+
+.home .history {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home .history > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.home .history > ul > li {
+  background-color: #cccccc;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-
-    font-size: var(--fz-700);
-
-    svg {
-      font-size: 1.5em;
-    }
-  }
-
-  .history {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-
-    > ul {
-      display: flex;
-      gap: 1rem;
-
-      > li {
-        background-color: var(--color-gray-20);
-
-        padding: 0.25rem 0.75rem;
-
-        border-radius: 999rem;
-      }
-    }
   }
 }

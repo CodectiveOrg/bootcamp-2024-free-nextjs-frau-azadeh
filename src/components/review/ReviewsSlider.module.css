@@ -1,0 +1,74 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 55%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #4a044e;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 1.2rem;
+  color: #4a044e;
+  margin-bottom: 0.5rem;
+}
+
+.comment {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 1rem;
+}
+
+.control {
+  background-color: #4a044e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control:hover {
+  background-color: #3a033d;
+}
+
+@media (max-width: 768px) {
+  .slider {
+    width: 80%;
+  }
+}
