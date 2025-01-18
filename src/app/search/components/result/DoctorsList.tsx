@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useFilterContext } from '../../context/FilterContext';
-import DoctorCard from './DoctorCard';
+import React from "react";
+import { useFilterContext } from "../../context/FilterContext";
+import DoctorCard from "./DoctorCard";
 
 const DoctorsList: React.FC = () => {
   const { doctors, genderFilter, degreeFilter } = useFilterContext();

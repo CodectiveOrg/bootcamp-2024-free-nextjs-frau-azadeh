@@ -1,6 +1,12 @@
-'use client';
+"use client";
 
-import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  ReactNode,
+} from "react";
 
 interface Doctor {
   id: number;
@@ -29,12 +35,12 @@ const FilterContext = createContext<FilterContextType | undefined>(undefined);
 
 export const FilterProvider = ({ children }: FilterProviderProps) => {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
-  const [genderFilter, setGenderFilter] = useState<string>('');
-  const [degreeFilter, setDegreeFilter] = useState<string>(''); // مقدار اولیه فیلتر درجه علمی
+  const [genderFilter, setGenderFilter] = useState<string>("");
+  const [degreeFilter, setDegreeFilter] = useState<string>(""); // مقدار اولیه فیلتر درجه علمی
 
   useEffect(() => {
     const fetchDoctors = async () => {
-      const res = await fetch('/api/doctors');
+      const res = await fetch("/api/doctors");
       const data = await res.json();
       setDoctors(data);
     };
@@ -48,7 +54,7 @@ export const FilterProvider = ({ children }: FilterProviderProps) => {
         setDoctors,
         genderFilter,
         setGenderFilter,
-        degreeFilter, 
+        degreeFilter,
         setDegreeFilter,
       }}
     >
@@ -60,7 +66,7 @@ export const FilterProvider = ({ children }: FilterProviderProps) => {
 export const useFilterContext = () => {
   const context = useContext(FilterContext);
   if (!context) {
-    throw new Error('useFilterContext must be used within a FilterProvider');
+    throw new Error("useFilterContext must be used within a FilterProvider");
   }
   return context;
 };

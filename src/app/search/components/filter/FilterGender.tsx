@@ -1,17 +1,21 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useFilterContext } from '../../context/FilterContext';
-import styles from './filterGender.module.css';
+import React from "react";
+import { useFilterContext } from "../../context/FilterContext";
+import styles from "./filterGender.module.css";
 
 const FilterGender: React.FC = () => {
   const { doctors, genderFilter, setGenderFilter } = useFilterContext();
 
-  const maleDoctorsCount = doctors.filter((doctor) => doctor.gender === 'مرد').length;
-  const femaleDoctorsCount = doctors.filter((doctor) => doctor.gender === 'زن').length;
+  const maleDoctorsCount = doctors.filter(
+    (doctor) => doctor.gender === "مرد",
+  ).length;
+  const femaleDoctorsCount = doctors.filter(
+    (doctor) => doctor.gender === "زن",
+  ).length;
 
   const handleGenderChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setGenderFilter(event.target.value); 
+    setGenderFilter(event.target.value);
   };
 
   return (
@@ -24,7 +28,7 @@ const FilterGender: React.FC = () => {
               type="radio"
               name="gender"
               value=""
-              checked={genderFilter === ''}
+              checked={genderFilter === ""}
               onChange={handleGenderChange}
               className={styles.radioInput}
             />
@@ -37,7 +41,7 @@ const FilterGender: React.FC = () => {
               type="radio"
               name="gender"
               value="مرد"
-              checked={genderFilter === 'مرد'}
+              checked={genderFilter === "مرد"}
               onChange={handleGenderChange}
               className={styles.radioInput}
             />
@@ -50,7 +54,7 @@ const FilterGender: React.FC = () => {
               type="radio"
               name="gender"
               value="زن"
-              checked={genderFilter === 'زن'}
+              checked={genderFilter === "زن"}
               onChange={handleGenderChange}
               className={styles.radioInput}
             />

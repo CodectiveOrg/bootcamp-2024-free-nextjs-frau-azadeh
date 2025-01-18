@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useFilterContext } from '../../context/FilterContext';
-import styles from './FilterDegree.module.css';
+import React from "react";
+import { useFilterContext } from "../../context/FilterContext";
+import styles from "./FilterDegree.module.css";
 
 const FilterDegree: React.FC = () => {
   const { degreeFilter, setDegreeFilter } = useFilterContext();
 
   const handleDegreeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setDegreeFilter(event.target.value); 
+    setDegreeFilter(event.target.value);
   };
 
   return (
@@ -21,7 +21,7 @@ const FilterDegree: React.FC = () => {
               type="radio"
               name="degree"
               value=""
-              checked={degreeFilter === ''}
+              checked={degreeFilter === ""}
               onChange={handleDegreeChange}
             />
             همه
@@ -33,7 +33,7 @@ const FilterDegree: React.FC = () => {
               type="radio"
               name="degree"
               value="فوق تخصص"
-              checked={degreeFilter === 'فوق تخصص'}
+              checked={degreeFilter === "فوق تخصص"}
               onChange={handleDegreeChange}
             />
             فوق تخصص
@@ -45,7 +45,7 @@ const FilterDegree: React.FC = () => {
               type="radio"
               name="degree"
               value="متخصص"
-              checked={degreeFilter === 'متخصص'}
+              checked={degreeFilter === "متخصص"}
               onChange={handleDegreeChange}
             />
             متخصص
@@ -57,7 +57,7 @@ const FilterDegree: React.FC = () => {
               type="radio"
               name="degree"
               value="دکتری"
-              checked={degreeFilter === 'دکتری'}
+              checked={degreeFilter === "دکتری"}
               onChange={handleDegreeChange}
             />
             دکتری
