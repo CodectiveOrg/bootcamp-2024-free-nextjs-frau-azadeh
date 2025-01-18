@@ -3,7 +3,7 @@ import styles from "./search.module.css";
 import { FilterProvider } from "./context/FilterContext";
 import DoctorsList from "./components/result/DoctorsList";
 import FilterGender from "./components/filter/FilterGender";
-import FilterDegree from "./components/filter/FilterDegree";
+import FilterDegree from "./components/filter/FilterDegre";
 export default function page(): ReactElement {
   return (
     <FilterProvider>

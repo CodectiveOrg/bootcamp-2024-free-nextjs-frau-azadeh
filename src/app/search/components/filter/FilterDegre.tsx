@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useFilterContext } from "../../context/FilterContext";
-import styles from "./filterDegree.module.css";
+import styles from "./filterDegre.module.css";
 
 const FilterDegree: React.FC = () => {
   const { degreeFilter, setDegreeFilter } = useFilterContext();
