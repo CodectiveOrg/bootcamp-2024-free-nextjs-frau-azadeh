@@ -7,7 +7,6 @@ import DoctorCard from "./DoctorCard";
 const DoctorsList: React.FC = () => {
   const { doctors, genderFilter, degreeFilter } = useFilterContext();
 
-  // فیلتر کردن دکترها بر اساس جنسیت و درجه علمی
   const filteredDoctors = doctors.filter((doctor) => {
     const genderMatch = genderFilter ? doctor.gender === genderFilter : true;
     const degreeMatch = degreeFilter ? doctor.degree === degreeFilter : true;
