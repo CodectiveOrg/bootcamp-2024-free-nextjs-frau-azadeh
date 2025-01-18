@@ -1,16 +1,18 @@
-"use client";
+'use client';
 
-import React from "react";
-import { useFilterContext } from "../../context/FilterContext";
-import DoctorCard from "./DoctorCard";
+import React from 'react';
+import { useFilterContext } from '../../context/FilterContext';
+import DoctorCard from './DoctorCard';
 
 const DoctorsList: React.FC = () => {
-  const { doctors, genderFilter } = useFilterContext();
+  const { doctors, genderFilter, degreeFilter } = useFilterContext();
 
-  // فیلتر کردن دکترها بر اساس جنسیت
-  const filteredDoctors = doctors.filter((doctor) =>
-    genderFilter ? doctor.gender === genderFilter : true,
-  );
+  // فیلتر کردن دکترها بر اساس جنسیت و درجه علمی
+  const filteredDoctors = doctors.filter((doctor) => {
+    const genderMatch = genderFilter ? doctor.gender === genderFilter : true;
+    const degreeMatch = degreeFilter ? doctor.degree === degreeFilter : true;
+    return genderMatch && degreeMatch;
+  });
 
   return (
     <div>
