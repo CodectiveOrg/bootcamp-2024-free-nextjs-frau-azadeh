@@ -4,7 +4,7 @@ import React from "react";
 import { useFilterContext } from "../../context/FilterContext";
 import styles from "./filterDegre.module.css";
 
-const FilterDegree: React.FC = () => {
+const FilterDegre: React.FC = () => {
   const { degreeFilter, setDegreeFilter } = useFilterContext();
 
   const handleDegreeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -72,4 +72,4 @@ const FilterDegree: React.FC = () => {
   );
 };
 
-export default FilterDegree;
+export default FilterDegre;
