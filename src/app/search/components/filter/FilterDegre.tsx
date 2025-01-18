@@ -23,6 +23,7 @@ const FilterDegree: React.FC = () => {
               value=""
               checked={degreeFilter === ""}
               onChange={handleDegreeChange}
+              className={styles.radioInput} // اضافه کردن کلاس
             />
             همه
           </label>
@@ -35,6 +36,7 @@ const FilterDegree: React.FC = () => {
               value="فوق تخصص"
               checked={degreeFilter === "فوق تخصص"}
               onChange={handleDegreeChange}
+              className={styles.radioInput} // اضافه کردن کلاس
             />
             فوق تخصص
           </label>
@@ -47,6 +49,7 @@ const FilterDegree: React.FC = () => {
               value="متخصص"
               checked={degreeFilter === "متخصص"}
               onChange={handleDegreeChange}
+              className={styles.radioInput} // اضافه کردن کلاس
             />
             متخصص
           </label>
@@ -59,6 +62,7 @@ const FilterDegree: React.FC = () => {
               value="دکتری"
               checked={degreeFilter === "دکتری"}
               onChange={handleDegreeChange}
+              className={styles.radioInput} // اضافه کردن کلاس
             />
             دکتری
           </label>

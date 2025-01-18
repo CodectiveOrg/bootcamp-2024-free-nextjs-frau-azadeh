@@ -1,3 +1,16 @@
+.radioInput {
+  accent-color: #4a044e;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.count {
+  font-size: 0.9rem;
+  color: #999;
+  margin-left: 8px;
+}
+
 .filterContainer {
   margin-bottom: 1rem;
   font-size: 14px;
@@ -14,24 +27,4 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-input[type="radio"] {
-  accent-color: #4a044e;
-  width: 16px;
-  height: 16px;
-  margin: 0;
-}
-
-.radioInput {
-  accent-color: #4a044e;
-  width: 16px;
-  height: 16px;
-  margin: 0;
-}
-
-.count {
-  font-size: 0.9rem;
-  color: #999;
-  margin-left: 8px;
 }
