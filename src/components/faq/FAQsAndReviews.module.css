@@ -8,7 +8,6 @@
   gap: 2rem;
 }
 
-/* بخش سوالات متداول */
 .faqs {
   flex: 1 1 calc(50% - 1rem);
   background-color: #f9f9f9;
@@ -59,12 +58,11 @@
   color: #333;
 }
 
-/* بخش نظرات مشتریان */
 .reviews {
   flex: 1 1 calc(50% - 1rem);
 }
 
-/* حالت ریسپانسیو */
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
