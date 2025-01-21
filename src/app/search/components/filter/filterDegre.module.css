@@ -24,11 +24,11 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-  color: #333; 
+  color: #333;
 }
 
 .radioInput {
-  accent-color: #4a044e; 
+  accent-color: #4a044e;
   width: 16px;
   height: 16px;
 }
