@@ -5,20 +5,14 @@ import { useFilterContext } from "../../context/FilterContext";
 import DoctorCard from "./DoctorCard";
 
 const DoctorsList: React.FC = () => {
-  const { doctors, genderFilter, degreeFilter } = useFilterContext();
-
-  const filteredDoctors = doctors.filter((doctor) => {
-    const genderMatch = genderFilter ? doctor.gender === genderFilter : true;
-    const degreeMatch = degreeFilter ? doctor.degree === degreeFilter : true;
-    return genderMatch && degreeMatch;
-  });
+  const { doctors } = useFilterContext();
 
   return (
     <div>
-      {filteredDoctors.length === 0 ? (
+      {doctors.length === 0 ? (
         <p>هیچ دکتری پیدا نشد</p>
       ) : (
-        filteredDoctors.map((doctor) => (
+        doctors.map((doctor) => (
           <DoctorCard
             key={doctor.id}
             id={doctor.id}
@@ -28,6 +22,7 @@ const DoctorsList: React.FC = () => {
             degree={doctor.degree}
             workTime={doctor.workTime}
             image={doctor.image}
+            defaultRating={doctor.defaultRating}
           />
         ))
       )}

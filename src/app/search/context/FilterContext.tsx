@@ -16,6 +16,7 @@ interface Doctor {
   workTime: string;
   degree: string;
   image: string;
+  defaultRating: number;
 }
 
 interface FilterContextType {

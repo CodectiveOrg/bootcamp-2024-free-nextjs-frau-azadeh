@@ -7,7 +7,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/1.webp",
-    "rating": 4.2
+    "defaultRating": 4
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/2.webp",
-    "rating": 3.9
+    "defaultRating": 3
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/3.webp",
-    "rating": 3.6
+    "defaultRating": 3
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/4.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/5.webp",
-    "rating": 4.6
+    "defaultRating": 4
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/6.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/7.webp",
-    "rating": 4.9
+    "defaultRating": 4
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/8.webp",
-    "rating": 3.2
+    "defaultRating": 3
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/9.webp",
-    "rating": 2.9
+    "defaultRating": 2
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/10.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/11.webp",
-    "rating": 4.5
+    "defaultRating": 4
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/12.webp",
-    "rating": 4.1
+    "defaultRating": 4
   },
   {
     "id": 13,
@@ -127,7 +127,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/13.webp",
-    "rating": 3.6
+    "defaultRating": 3
   },
   {
     "id": 14,
@@ -137,7 +137,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/14.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 15,
@@ -147,7 +147,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/15.webp",
-    "rating": 4.1
+    "defaultRating": 4
   },
   {
     "id": 16,
@@ -157,7 +157,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/16.webp",
-    "rating": 2.9
+    "defaultRating": 2
   },
   {
     "id": 17,
@@ -167,7 +167,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/17.webp",
-    "rating": 4.6
+    "defaultRating": 4
   },
   {
     "id": 18,
@@ -177,7 +177,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/18.webp",
-    "rating": 3.7
+    "defaultRating": 3
   },
   {
     "id": 19,
@@ -187,7 +187,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/19.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 20,
@@ -197,7 +197,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/20.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 21,
@@ -207,7 +207,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/21.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 22,
@@ -217,7 +217,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/22.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 23,
@@ -227,7 +227,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/23.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 24,
@@ -237,7 +237,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/24.webp",
-    "rating": 2.8
+    "defaultRating": 2
   },
   {
     "id": 25,
@@ -247,7 +247,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/25.webp",
-    "rating": 4.6
+    "defaultRating": 4
   },
   {
     "id": 26,
@@ -257,7 +257,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/26.webp",
-    "rating": 4.5
+    "defaultRating": 4
   },
   {
     "id": 27,
@@ -267,7 +267,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/27.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 28,
@@ -277,7 +277,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/28.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 29,
@@ -287,7 +287,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/29.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 30,
@@ -297,7 +297,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/30.webp",
-    "rating": 2.9
+    "defaultRating": 2
   },
   {
     "id": 31,
@@ -307,7 +307,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/31.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 32,
@@ -317,7 +317,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/32.webp",
-    "rating": 2.8
+    "defaultRating": 2
   },
   {
     "id": 33,
@@ -327,7 +327,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/33.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 34,
@@ -337,7 +337,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/34.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 35,
@@ -347,7 +347,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/35.webp",
-    "rating": 4.8
+    "defaultRating": 4
   },
   {
     "id": 36,
@@ -357,7 +357,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/36.webp",
-    "rating": 4.5
+    "defaultRating": 4
   },
   {
     "id": 37,
@@ -367,7 +367,7 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/37.webp",
-    "rating": 2.8
+    "defaultRating": 2
   },
   {
     "id": 38,
@@ -377,7 +377,7 @@
     "workTime": "عصر",
     "degree": "دکتری",
     "image": "/assets/doctors/38.webp",
-    "rating": 3.6
+    "defaultRating": 3
   },
   {
     "id": 39,
@@ -387,7 +387,7 @@
     "workTime": "صبح",
     "degree": "متخصص",
     "image": "/assets/doctors/39.webp",
-    "rating": 3.8
+    "defaultRating": 3
   },
   {
     "id": 40,
@@ -397,6 +397,6 @@
     "workTime": "شب",
     "degree": "فوق تخصص",
     "image": "/assets/doctors/40.webp",
-    "rating": 4.3
+    "defaultRating": 4
   }
 ]

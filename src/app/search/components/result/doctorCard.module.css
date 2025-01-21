@@ -97,3 +97,16 @@
     align-items: center;
   }
 }
+.ratingInput {
+  display: flex;
+  gap: 5px;
+}
+
+.ratingInput button {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ratingInput button:hover {
+  transform: scale(1.2);
+}
