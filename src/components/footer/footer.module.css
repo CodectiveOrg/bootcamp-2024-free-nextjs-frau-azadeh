@@ -1,13 +1,12 @@
-/* استایل اصلی فوتر */
 .footer {
-  background-color: #4a044e; /* رنگ پس‌زمینه */
-  color: #ffffff; /* رنگ متن */
+  background-color: #4a044e; 
+  color: #ffffff; 
   padding: 2rem 1rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 ستون */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 2rem;
 }
 
