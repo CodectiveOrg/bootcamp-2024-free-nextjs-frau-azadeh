@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
 import doctors from "@/data/doctors.json";
 import CommentForm from "../components/CommentForm";
-import styles from "./DoctorPage.module.css";
+import styles from "./doctorPage.module.css";
 
 type Props = {
   params: { id: string };
