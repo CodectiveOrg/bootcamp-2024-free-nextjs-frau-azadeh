@@ -19,8 +19,8 @@ const FilterGender: React.FC = () => {
   };
 
   return (
-    <div className={styles.filterContainer}>
-      <p>جنسیت پزشک:</p>
+    <div className={styles.container}>
+      <p className={styles.title}>جنسیت پزشک:</p>
       <form>
         <div className={styles.radioGroup}>
           <label>
