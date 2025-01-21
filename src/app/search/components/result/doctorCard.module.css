@@ -110,3 +110,6 @@
 .ratingInput button:hover {
   transform: scale(1.2);
 }
+.rating{
+  color: #333;
+}

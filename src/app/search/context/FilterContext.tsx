@@ -17,6 +17,7 @@ interface Doctor {
   degree: string;
   image: string;
   defaultRating: number;
+  comments: Array<{ user: string; text: string; date: string }>;
 }
 
 interface FilterContextType {

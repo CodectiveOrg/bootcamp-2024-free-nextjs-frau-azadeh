@@ -52,7 +52,10 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
         <p className={styles.detail}>جنسیت: {gender}</p>
         <p className={styles.detail}>درجه: {degree}</p>
         <p className={styles.detail}>زمان کار: {workTime}</p>
-        <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
+        
+      </div>
+      <div className={styles.action}>
+      <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
         <div className={styles.ratingInput}>
           {[1, 2, 3, 4, 5].map((star) => (
             <button
@@ -70,8 +73,6 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
             </button>
           ))}
         </div>
-      </div>
-      <div className={styles.action}>
         <Link href={`/doctor/${id}`} className={styles.button}>
           نوبت دهی آنلاین
         </Link>
