@@ -6,7 +6,6 @@ const FooterComponent = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        {/* بخش درباره بیمارستان */}
         <div className={styles.column}>
           <h3 className={styles.title}>درباره کلینیک دیابلند</h3>
           <p>
@@ -33,7 +32,6 @@ const FooterComponent = () => {
           </div>
         </div>
 
-        {/* بخش راهنمای مراجعین */}
         <div className={styles.column}>
           <h3 className={styles.title}>راهنمای مراجعین</h3>
           <ul>
@@ -45,7 +43,6 @@ const FooterComponent = () => {
           </ul>
         </div>
 
-        {/* بخش اطلاعات تماس */}
         <div className={styles.column}>
           <h3 className={styles.title}>اطلاعات تماس</h3>
           <p>آدرس: سعادت آباد، بین چهارراه سرو </p>
