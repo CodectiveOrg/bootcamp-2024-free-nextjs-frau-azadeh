@@ -1,15 +1,14 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
@@ -17,17 +16,27 @@
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border-radius: 8px; 
   object-fit: cover;
-  margin-right: 16px;
 }
 
 .info {
+  flex: 2;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  text-align: center; 
+  justify-content: center;
 }
 
 .name {
@@ -39,5 +48,50 @@
 .detail {
   font-size: 0.9rem;
   color: #555;
-  margin: 4px 0;
+}
+
+.action {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #4a044e;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3a033d;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imageContainer {
+    margin-bottom: 16px;
+  }
+
+  .info {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .action {
+    align-items: center;
+  }
 }

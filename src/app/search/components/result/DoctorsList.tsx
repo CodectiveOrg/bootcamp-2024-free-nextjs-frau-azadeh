@@ -21,6 +21,7 @@ const DoctorsList: React.FC = () => {
         filteredDoctors.map((doctor) => (
           <DoctorCard
             key={doctor.id}
+            id={doctor.id}
             name={doctor.name}
             gender={doctor.gender}
             specialty={doctor.specialty}
