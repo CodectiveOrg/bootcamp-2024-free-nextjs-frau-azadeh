@@ -9,7 +9,7 @@
 .title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #4a044e; /* رنگ اصلی */
+  color: #4a044e;
   margin-bottom: 1rem;
 }
 
@@ -24,11 +24,11 @@
   align-items: center;
   gap: 0.5rem;
   font-size: 1rem;
-  color: #333; /* خوانا و واضح */
+  color: #333; 
 }
 
 .radioInput {
-  accent-color: #4a044e; /* استایل رنگ برای دکمه‌های رادیویی */
+  accent-color: #4a044e; 
   width: 16px;
   height: 16px;
 }
@@ -39,7 +39,6 @@
   margin-left: 8px;
 }
 
-/* حالت ریسپانسیو */
 @media (max-width: 768px) {
   .container {
     padding: 0.8rem;

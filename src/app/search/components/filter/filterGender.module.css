@@ -33,7 +33,6 @@
   height: 16px;
 }
 
-/* حالت ریسپانسیو */
 @media (max-width: 768px) {
   .container {
     padding: 0.8rem;
