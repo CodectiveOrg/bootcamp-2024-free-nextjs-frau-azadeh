@@ -13,18 +13,22 @@ type Props = {
 export default function DoctorPage({ params }: Props) {
   const doctor = doctors.find((x) => x.id === parseInt(params.id));
 
+  const [comments, setComments] = useState(
+    doctor?.comments || [], 
+  );
+
+  useEffect(() => {
+    if (doctor) {
+      const storedComments = JSON.parse(
+        localStorage.getItem(`doctor-comments-${doctor.id}`) || "[]",
+      );
+      setComments([...(doctor.comments || []), ...storedComments]);
+    }
+  }, [doctor?.id]);
+
   if (!doctor) {
     return notFound();
   }
-
-  const [comments, setComments] = useState(doctor.comments || []);
-
-  useEffect(() => {
-    const storedComments = JSON.parse(
-      localStorage.getItem(`doctor-comments-${doctor.id}`) || "[]",
-    );
-    setComments([...doctor.comments, ...storedComments]);
-  }, [doctor.id]);
 
   const addComment = (user: string, text: string) => {
     const newComment = {
