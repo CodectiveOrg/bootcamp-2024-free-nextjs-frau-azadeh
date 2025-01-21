@@ -22,7 +22,9 @@ export default function Page() {
         </button>
 
         {isDrawerOpen && (
-          <aside className={`${styles.filterDrawer} ${isDrawerOpen ? styles.active : ""}`}>
+          <aside
+            className={`${styles.filterDrawer} ${isDrawerOpen ? styles.active : ""}`}
+          >
             <button className={styles.closeButton} onClick={toggleDrawer}>
               بستن
             </button>
