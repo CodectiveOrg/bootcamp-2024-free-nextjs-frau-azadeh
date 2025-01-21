@@ -17,7 +17,7 @@
 }
 
 .image {
-  flex: 0 0 400px; 
+  flex: 0 0 400px;
   max-width: 400px;
   text-align: center;
 }
@@ -41,20 +41,20 @@
 
 @media (max-width: 768px) {
   .container {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     width: 85%;
   }
 
   .left,
   .right {
-    width: 100%; 
+    width: 100%;
     text-align: center;
   }
 
   .img {
-    max-width: 300px; 
-}
+    max-width: 300px;
+  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
@@ -64,10 +64,10 @@
 
   .left,
   .right {
-    flex: 1 1 45%; 
+    flex: 1 1 45%;
   }
 
   .img {
-    max-width: 350px; 
+    max-width: 350px;
   }
 }

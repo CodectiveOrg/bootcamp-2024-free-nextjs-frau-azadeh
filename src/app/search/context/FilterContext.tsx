@@ -23,8 +23,8 @@ interface FilterContextType {
   setDoctors: React.Dispatch<React.SetStateAction<Doctor[]>>;
   genderFilter: string;
   setGenderFilter: React.Dispatch<React.SetStateAction<string>>;
-  degreeFilter: string; 
-  setDegreeFilter: React.Dispatch<React.SetStateAction<string>>; 
+  degreeFilter: string;
+  setDegreeFilter: React.Dispatch<React.SetStateAction<string>>;
 }
 
 interface FilterProviderProps {
@@ -36,7 +36,7 @@ const FilterContext = createContext<FilterContextType | undefined>(undefined);
 export const FilterProvider = ({ children }: FilterProviderProps) => {
   const [doctors, setDoctors] = useState<Doctor[]>([]);
   const [genderFilter, setGenderFilter] = useState<string>("");
-  const [degreeFilter, setDegreeFilter] = useState<string>(""); 
+  const [degreeFilter, setDegreeFilter] = useState<string>("");
 
   useEffect(() => {
     const fetchDoctors = async () => {

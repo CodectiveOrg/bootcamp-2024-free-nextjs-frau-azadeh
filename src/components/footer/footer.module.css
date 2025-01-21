@@ -1,12 +1,12 @@
 .footer {
-  background-color: #4a044e; 
-  color: #ffffff; 
+  background-color: #4a044e;
+  color: #ffffff;
   padding: 2rem 1rem;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 

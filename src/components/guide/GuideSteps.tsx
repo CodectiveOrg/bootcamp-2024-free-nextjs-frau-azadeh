@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image"; 
+import Image from "next/image";
 import styles from "./guideSteps.module.css";
 
 const GuideSteps: React.FC = () => {
@@ -18,9 +18,9 @@ const GuideSteps: React.FC = () => {
         <Image
           src="/assets/guide/doctor-guide.webp"
           alt="راهنمای مراجعین"
-          width={400} 
-          height={400} 
-          className={styles.img} 
+          width={400}
+          height={400}
+          className={styles.img}
         />
       </div>
       <div className={styles.right}>
