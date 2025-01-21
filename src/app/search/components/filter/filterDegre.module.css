@@ -1,8 +1,36 @@
+.container {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4a044e; /* رنگ اصلی */
+  margin-bottom: 1rem;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #333; /* خوانا و واضح */
+}
+
 .radioInput {
-  accent-color: #4a044e;
+  accent-color: #4a044e; /* استایل رنگ برای دکمه‌های رادیویی */
   width: 16px;
   height: 16px;
-  margin: 0;
 }
 
 .count {
@@ -11,20 +39,13 @@
   margin-left: 8px;
 }
 
-.filterContainer {
-  margin-bottom: 1rem;
-  font-size: 14px;
-  color: #4a044e;
-}
+/* حالت ریسپانسیو */
+@media (max-width: 768px) {
+  .container {
+    padding: 0.8rem;
+  }
 
-.radioGroup {
-  margin-bottom: 0.5rem;
-  display: flex;
-  align-items: center;
-}
-
-.radioGroup label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  .title {
+    font-size: 1rem;
+  }
 }

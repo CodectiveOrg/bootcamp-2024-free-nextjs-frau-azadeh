@@ -12,62 +12,54 @@ const FilterDegre: React.FC = () => {
   };
 
   return (
-    <div className={styles.filterContainer}>
-      <p>درجه علمی:</p>
-      <form>
-        <div className={styles.radioGroup}>
-          <label>
-            <input
-              type="radio"
-              name="degree"
-              value=""
-              checked={degreeFilter === ""}
-              onChange={handleDegreeChange}
-              className={styles.radioInput}
-            />
-            همه
-          </label>
-        </div>
-        <div className={styles.radioGroup}>
-          <label>
-            <input
-              type="radio"
-              name="degree"
-              value="فوق تخصص"
-              checked={degreeFilter === "فوق تخصص"}
-              onChange={handleDegreeChange}
-              className={styles.radioInput}
-            />
-            فوق تخصص
-          </label>
-        </div>
-        <div className={styles.radioGroup}>
-          <label>
-            <input
-              type="radio"
-              name="degree"
-              value="متخصص"
-              checked={degreeFilter === "متخصص"}
-              onChange={handleDegreeChange}
-              className={styles.radioInput}
-            />
-            متخصص
-          </label>
-        </div>
-        <div className={styles.radioGroup}>
-          <label>
-            <input
-              type="radio"
-              name="degree"
-              value="دکتری"
-              checked={degreeFilter === "دکتری"}
-              onChange={handleDegreeChange}
-              className={styles.radioInput}
-            />
-            دکتری
-          </label>
-        </div>
-      </form>
+    <div className={styles.container}>
+      <h3 className={styles.title}>فیلتر بر اساس درجه علمی:</h3>
+      <div className={styles.radioGroup}>
+        <label>
+          <input
+            type="radio"
+            name="degree"
+            value=""
+            checked={degreeFilter === ""}
+            onChange={handleDegreeChange}
+            className={styles.radioInput}
+          />
+          همه
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="degree"
+            value="فوق تخصص"
+            checked={degreeFilter === "فوق تخصص"}
+            onChange={handleDegreeChange}
+            className={styles.radioInput}
+          />
+          فوق تخصص
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="degree"
+            value="متخصص"
+            checked={degreeFilter === "متخصص"}
+            onChange={handleDegreeChange}
+            className={styles.radioInput}
+          />
+          متخصص
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="degree"
+            value="دکتری"
+            checked={degreeFilter === "دکتری"}
+            onChange={handleDegreeChange}
+            className={styles.radioInput}
+          />
+          دکتری
+        </label>
+      </div>
     </div>
   );
 };
