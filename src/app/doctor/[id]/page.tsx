@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
 import doctors from "@/data/doctors.json";
-import CommentForm from "../components/CommentForm"; // وارد کردن کامپوننت جداگانه
+import CommentForm from "../components/CommentForm"; 
 import styles from "./DoctorPage.module.css";
 
 type Props = {
@@ -44,7 +44,6 @@ export default function DoctorPage({ params }: Props) {
 
   return (
     <div className={styles.container}>
-      {/* Doctor Information */}
       <div className={styles.doctorCard}>
         <img src={doctor.image} alt={doctor.name} className={styles.image} />
         <div className={styles.info}>
@@ -56,7 +55,6 @@ export default function DoctorPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Comments Section */}
       <div className={styles.commentsSection}>
         <h2>نظرات کاربران</h2>
         {comments.length > 0 ? (
@@ -74,7 +72,6 @@ export default function DoctorPage({ params }: Props) {
         ) : (
           <p>هنوز نظری ثبت نشده است.</p>
         )}
-        {/* استفاده از کامپوننت ثبت نظر */}
         <CommentForm onAddComment={addComment} />
       </div>
     </div>

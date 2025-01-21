@@ -3,13 +3,13 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    max-width: 1000px; /* حداکثر عرض */
-    margin: 0 auto; /* وسط‌چین کردن باکس‌ها */
+    max-width: 1000px; 
+    margin: 0 auto; 
   }
   .heading {
-    color: #000; /* رنگ سیاه */
-    font-weight: bold; /* اختیاری */
-    margin-bottom: 1rem; /* اختیاری */
+    color: #000; 
+    font-weight: bold; 
+    margin-bottom: 1rem; 
   }
   .commentsSection h2{
     color: #000;
@@ -39,13 +39,13 @@
   .name {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #000; /* رنگ مشکی */
+    color: #000;
     margin-bottom: 1rem;
   }
   
   .detail {
     font-size: 1rem;
-    color: #000; /* رنگ مشکی */
+    color: #000; 
     margin-bottom: 0.5rem;
   }
   
@@ -74,12 +74,12 @@
   .commentUser {
     font-weight: bold;
     margin-bottom: 0.5rem;
-    color: #000; /* رنگ مشکی */
+    color: #000; 
   }
   
   .commentText {
     font-size: 0.95rem;
-    color: #000; /* رنگ مشکی */
+    color: #000; 
   }
   
   .commentForm {
