@@ -5,7 +5,7 @@ import { useFilterContext } from "../../context/FilterContext";
 import DoctorCard from "./DoctorCard";
 
 const DoctorsList: React.FC = () => {
-  const { doctors, degreeFilter, genderFilter } = useFilterContext(); 
+  const { doctors, degreeFilter, genderFilter } = useFilterContext();
 
   const filteredDoctors = doctors.filter((doctor) => {
     const matchesDegree = degreeFilter ? doctor.degree === degreeFilter : true;

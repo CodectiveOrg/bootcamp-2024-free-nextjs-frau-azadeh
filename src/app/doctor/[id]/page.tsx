@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { notFound } from "next/navigation";
 import doctors from "@/data/doctors.json";
-import CommentForm from "../components/CommentForm"; 
+import CommentForm from "../components/CommentForm";
 import styles from "./DoctorPage.module.css";
 
 type Props = {
@@ -21,7 +21,7 @@ export default function DoctorPage({ params }: Props) {
 
   useEffect(() => {
     const storedComments = JSON.parse(
-      localStorage.getItem(`doctor-comments-${doctor.id}`) || "[]"
+      localStorage.getItem(`doctor-comments-${doctor.id}`) || "[]",
     );
     setComments([...doctor.comments, ...storedComments]);
   }, [doctor.id]);
@@ -38,7 +38,7 @@ export default function DoctorPage({ params }: Props) {
 
     localStorage.setItem(
       `doctor-comments-${doctor.id}`,
-      JSON.stringify(updatedComments)
+      JSON.stringify(updatedComments),
     );
   };
 
