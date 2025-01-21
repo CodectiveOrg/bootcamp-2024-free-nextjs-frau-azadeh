@@ -13,9 +13,7 @@ type Props = {
 export default function DoctorPage({ params }: Props) {
   const doctor = doctors.find((x) => x.id === parseInt(params.id));
 
-  const [comments, setComments] = useState(
-    doctor?.comments || [], 
-  );
+  const [comments, setComments] = useState(doctor?.comments || []);
 
   useEffect(() => {
     if (doctor) {
