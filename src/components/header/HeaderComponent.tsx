@@ -15,10 +15,7 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      {/* عنوان سایت */}
       <h1 className={styles.title}>دیابلند</h1>
-
-      {/* منو */}
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
           <li>
@@ -64,10 +61,8 @@ const HeaderComponent: React.FC = () => {
         </ul>
       </nav>
 
-      {/* دکمه ورود */}
       <button className={styles.cta}>ورود</button>
 
-      {/* آیکن همبرگری */}
       <div className={styles.hamburger} onClick={toggleMenu}>
         {menuOpen ? (
           <span>×</span>
