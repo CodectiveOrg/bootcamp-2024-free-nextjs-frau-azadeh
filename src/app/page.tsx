@@ -12,22 +12,22 @@ export default function Home(): ReactElement {
   return (
     <div className={styles.home}>
       <SliderComponent />
-      <br></br>
+      <br/>
       <h1>
         <MyDoctorLogo />
         دکتر من
       </h1>
       <GlobalSearchBoxComponent />
       <div className={styles.history}></div>
-      <br></br>
+      <br/>
       <GuideSteps />
-      <br></br>
+      <br/>
       <StatsCards />
-      <br></br>
+      <br/>
       <div className={styles.container}>
         <FAQsAndReviews />
         <ReviewsSlider />
-        <br></br>
+       <br/>
       </div>
     </div>
   );
