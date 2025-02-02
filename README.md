@@ -26,21 +26,21 @@ Welcome to Mein-Arzt (My Doctor) – a modern, fully responsive medical assistan
 
 1. Clone the Repository
 
-    git clone https://github.com/yourusername/mein-arzt.git
+        git clone https://github.com/yourusername/mein-arzt.git
 
-    cd mein-arzt
+        cd mein-arzt
 
 2. Install Dependencies
 
-    npm install
-    # or
-    yarn install
+        npm install
+        or
+        yarn install
 
 3. Run the Development Server
 
-    npm run dev
-    # or
-    yarn dev
+        npm run dev
+        or
+        yarn dev
 
 Open http://localhost:3000 to view it in your browser.
 
