@@ -48,8 +48,6 @@ Open http://localhost:3000 to view it in your browser.
 
 We welcome contributions! If you’d like to report a bug, request a feature, or contribute code, feel free to open an issue or pull request. Your feedback is highly appreciated!
 
-⭐ Don’t forget to star the repository if you find it useful! ⭐
-
 Check out the live [demo](https://mein-arzt.vercel.app)
 
 Developed with 🌻 by Azadeh Sharifi Soltani
