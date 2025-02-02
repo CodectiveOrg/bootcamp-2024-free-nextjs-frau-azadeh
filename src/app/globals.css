@@ -7,15 +7,15 @@
   --color-border: hsl(0, 0%, 85%);
   --color-input-bg: hsl(0, 0%, 98%);
   --color-shadow: hsla(0, 0%, 0%, 0.1);
-  --color-title:hsl(270deg,50%,20%);
-  --color-radio: hsl(270deg,50%,20%);
-  --color-container: hsl(0, 0%,100%);
+  --color-title: hsl(270deg, 50%, 20%);
+  --color-radio: hsl(270deg, 50%, 20%);
+  --color-container: hsl(0, 0%, 100%);
   --color-button: hsl(270deg, 50%, 20%);
   --color-hover: hsl(288deg, 96%, 90%);
-  
+
   --color-light-gray: hsl(0, 0%, 95%);
   --color-dark-gray: hsl(0, 0%, 25%);
-  
+
   --border-radius: 0.5rem;
   --padding: 1.5rem;
   --gap: 1rem;

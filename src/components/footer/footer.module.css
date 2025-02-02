@@ -4,7 +4,6 @@
   padding: var(--padding);
   margin-top: 2rem;
 
-
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,7 +67,6 @@
       font-size: 1.5rem;
       text-decoration: none;
       transition: color 0.3s ease;
-
     }
   }
 
