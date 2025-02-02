@@ -50,7 +50,7 @@ We welcome contributions! If you’d like to report a bug, request a feature, or
 
 ⭐ Don’t forget to star the repository if you find it useful! ⭐
 
-Check out the live [demo]:(https://mein-arzt.vercel.app)
+Check out the live [demo](https://mein-arzt.vercel.app)
 
 Developed with 🌻 by Azadeh Sharifi Soltani
 
