@@ -21,7 +21,7 @@
   align-items: center;
   background: white;
   border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
   padding: var(--padding);
   gap: 1rem;
 
