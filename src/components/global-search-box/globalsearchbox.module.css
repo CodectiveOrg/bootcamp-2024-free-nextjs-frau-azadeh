@@ -1,14 +1,14 @@
 .header-container {
-  display: flex; /* چیدمان افقی */
-  align-items: center; /* مرکز کردن عناصر عمودی */
-  justify-content: center; /* وسط‌چین کردن کل محتوا */
-  gap: 1rem; /* فاصله بین عنوان و جستجو */
-  padding: 1rem; /* فضای داخلی */
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem; 
+  padding: 1rem; 
 }
 
 .header-title {
   font-size: 2rem;
-  color: var(--color-primary);
+  color: var(--color-title);
   display: flex;
   align-items: center;
 }
@@ -21,7 +21,8 @@
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-gray-20);
   border-radius: 999rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--color-container);
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
 }
 
 .global-search-box .prefix {
