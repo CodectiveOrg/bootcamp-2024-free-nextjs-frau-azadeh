@@ -3,9 +3,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
-  gap: 2rem;
+  gap: var(--gap);
 }
 
 .left,
@@ -17,25 +17,25 @@
 }
 
 .image {
-  flex: 0 0 400px;
-  max-width: 400px;
+  flex: 0 0 25rem;
+  max-width: 25rem;
   text-align: center;
 }
 
 .img {
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
   z-index: 2;
   position: relative;
 }
 
 .guide {
-  font-size: 1.2rem;
-  color: #4a044e;
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
+  font-size: var(--font-size);
+  color: var(--color-title);
   padding: 0.5rem 1rem;
-  background-color: #f9f9f9;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-container);
+  border-radius: var(--border-radius);
   text-align: center;
 }
 
@@ -53,9 +53,10 @@
   }
 
   .img {
-    max-width: 300px;
+    max-width: 18.75rem;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
     flex-wrap: wrap;
@@ -68,6 +69,6 @@
   }
 
   .img {
-    max-width: 350px;
+    max-width: 21.875rem;
   }
 }
