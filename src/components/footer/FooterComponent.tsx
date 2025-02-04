@@ -15,21 +15,6 @@ const FooterComponent = () => {
             نظیر مشاوره پزشکی، پایش منظم قند خون، آموزش‌های لازم برای مدیریت
             دیابت و توصیه‌های تغذیه‌ای، به دنبال بهبود کیفیت زندگی شماست.{" "}
           </p>
-          <p className={styles.contact}>فکس: (+۹۸۲۱) ۲۲۲۲۲۲۲۲ </p>
-          <div className={styles.socialIcons}>
-            <a href="https://facebook.com" aria-label="Facebook">
-              <FaFacebook />
-            </a>
-            <a href="https://instagram.com" aria-label="Instagram">
-              <FaInstagram />
-            </a>
-            <a href="https://twitter.com" aria-label="Twitter">
-              <FaTwitter />
-            </a>
-            <a href="https://linkedin.com" aria-label="LinkedIn">
-              <FaLinkedin />
-            </a>
-          </div>
         </div>
 
         <div className={styles.column}>
@@ -45,13 +30,25 @@ const FooterComponent = () => {
 
         <div className={styles.column}>
           <h3 className={styles.title}>اطلاعات تماس</h3>
-          <p>آدرس: سعادت آباد، بین چهارراه سرو </p>
-          <p>کد پستی: ۱۱۱۱۱۱۱۱</p>
-          <p>تلفن گویا: (+۹۸۲۱) ۲۲۲۲۲۲۲۲ </p>
+          <p>آدرس: سعادت آباد، بین چهارراه سرو ساختمان دیابلند پلاک ۲۲</p>
+          <p>تلفن گویا: (+۹۸۲۱) ۲۲۲۲ </p>
           <p>ایمیل: diabland@diabland.ir</p>
         </div>
       </div>
-
+      <div className={styles.socialIcons}>
+            <a href="https://facebook.com" aria-label="Facebook">
+              <FaFacebook />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+              <FaLinkedin />
+            </a>
+          </div>
       <div className={styles.footerBottom}>
         <p>تمام حقوق مادی و معنوی این سایت متعلق به دیابلند می باشد </p>
       </div>
