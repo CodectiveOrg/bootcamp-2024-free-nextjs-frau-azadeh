@@ -15,7 +15,7 @@ export default function Home(): ReactElement {
       <br />
       <h1>
         <MyDoctorLogo />
-        دکتر من
+        دیابلند
       </h1>
       <GlobalSearchBoxComponent />
       <div className={styles.history}></div>
