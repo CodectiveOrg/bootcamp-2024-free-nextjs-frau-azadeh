@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
+import MyDoctorLogo from "@/logo/my-doctor-logo";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
@@ -15,7 +16,9 @@ const HeaderComponent: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <h1 className={styles.title}>دیابلند</h1>
+      <h1 className={styles.title}>
+        <MyDoctorLogo/>
+        دیابلند</h1>
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
           <li>
