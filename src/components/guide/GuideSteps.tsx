@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./guideSteps.module.css";
-import doctorImage from '@/assets/guide/doctor.webp';
+import doctorImage from "@/assets/guide/doctor.webp";
 
 const GuideSteps: React.FC = () => {
   return (

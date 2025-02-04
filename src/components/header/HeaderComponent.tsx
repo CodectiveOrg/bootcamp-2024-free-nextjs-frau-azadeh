@@ -17,8 +17,9 @@ const HeaderComponent: React.FC = () => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title}>
-        <MyDoctorLogo/>
-        دیابلند</h1>
+        <MyDoctorLogo />
+        دیابلند
+      </h1>
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
           <li>

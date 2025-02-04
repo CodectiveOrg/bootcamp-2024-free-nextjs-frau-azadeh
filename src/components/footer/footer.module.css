@@ -55,7 +55,7 @@
   .socialIcons {
     display: flex;
     gap: 1rem;
-    margin:1rem;
+    margin: 1rem;
     justify-content: center;
 
     @media (max-width: 768px) {
