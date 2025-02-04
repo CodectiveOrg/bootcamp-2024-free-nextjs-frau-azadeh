@@ -2,15 +2,15 @@
 
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import slider from "@/assets/slider/slider.webp";
-import slider1 from "@/assets/slider/slider-1.webp";
-import slider2 from "@/assets/slider/slider-2.webp";
+import header from "@/assets/slider/header.webp";
+import header1 from "@/assets/slider/header1.webp";
+import header2 from "@/assets/slider/header2.webp";
 import styles from "./slider.module.css";
 
 const SliderComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const images = [slider, slider1, slider2];
+  const images = [header, header1, header2];
 
   useEffect(() => {
     const interval = setInterval(() => {
