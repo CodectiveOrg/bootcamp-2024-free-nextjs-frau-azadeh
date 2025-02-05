@@ -8,7 +8,11 @@ interface StarRatingProps {
   onRatingChange: (rating: number) => void;
 }
 
-const StarRating: React.FC<StarRatingProps> = ({ id, defaultRating, onRatingChange }) => {
+const StarRating: React.FC<StarRatingProps> = ({
+  id,
+  defaultRating,
+  onRatingChange,
+}) => {
   const [userRating, setUserRating] = useState<number | null>(null);
 
   useEffect(() => {
@@ -29,7 +33,11 @@ const StarRating: React.FC<StarRatingProps> = ({ id, defaultRating, onRatingChan
   return (
     <div className={styles.ratingInput}>
       {[1, 2, 3, 4, 5].map((star) => (
-        <DoctorStar key={star} filled={star <= finalRating} onClick={() => handleRating(star)} />
+        <DoctorStar
+          key={star}
+          filled={star <= finalRating}
+          onClick={() => handleRating(star)}
+        />
       ))}
     </div>
   );

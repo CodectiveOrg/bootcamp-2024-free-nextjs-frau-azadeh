@@ -42,7 +42,11 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
       </div>
       <div className={styles.action}>
         <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
-        <StarRating id={id} defaultRating={defaultRating} onRatingChange={setFinalRating} />
+        <StarRating
+          id={id}
+          defaultRating={defaultRating}
+          onRatingChange={setFinalRating}
+        />
         <Link href={`/doctor/${id}`} className={styles.button}>
           نوبت دهی آنلاین
         </Link>

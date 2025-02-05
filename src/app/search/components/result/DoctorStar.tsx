@@ -8,7 +8,10 @@ interface StarProps {
 
 const DoctorStar: React.FC<StarProps> = ({ filled, onClick }) => {
   return (
-    <button onClick={onClick} className={`${styles.ratingStar} ${filled ? styles.active : ""}`}>
+    <button
+      onClick={onClick}
+      className={`${styles.ratingStar} ${filled ? styles.active : ""}`}
+    >
       ★
     </button>
   );
