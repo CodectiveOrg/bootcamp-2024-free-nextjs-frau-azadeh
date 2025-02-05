@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./doctorCard.module.css";
 import Link from "next/link";
+import StarRating from "./StarRating";
 
 interface DoctorCardProps {
   id: number;
@@ -25,21 +26,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
   image,
   defaultRating,
 }) => {
-  const [userRating, setUserRating] = useState<number | null>(null);
-
-  useEffect(() => {
-    const storedRating = localStorage.getItem(`doctor-rating-${id}`);
-    if (storedRating) {
-      setUserRating(parseInt(storedRating, 10));
-    }
-  }, [id]);
-
-  const handleRating = (newRating: number) => {
-    setUserRating(newRating);
-    localStorage.setItem(`doctor-rating-${id}`, newRating.toString());
-  };
-
-  const finalRating = userRating || defaultRating;
+  const [finalRating, setFinalRating] = useState<number>(defaultRating);
 
   return (
     <div className={styles.card}>
@@ -55,19 +42,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
       </div>
       <div className={styles.action}>
         <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
-        <div className={styles.ratingInput}>
-          {[1, 2, 3, 4, 5].map((star) => (
-            <button
-              key={star}
-              onClick={() => handleRating(star)}
-              className={`${styles.ratingStar} ${
-                star <= finalRating ? styles.active : ""
-              }`}
-            >
-              ★
-            </button>
-          ))}
-        </div>
+        <StarRating id={id} defaultRating={defaultRating} onRatingChange={setFinalRating} />
         <Link href={`/doctor/${id}`} className={styles.button}>
           نوبت دهی آنلاین
         </Link>
