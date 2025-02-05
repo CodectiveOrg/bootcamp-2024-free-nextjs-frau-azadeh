@@ -71,6 +71,19 @@
       transition: background-color var(--transition);
     }
   }
+
+  .ratingStar {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: gray; 
+  }
+  
+  .ratingStar.active {
+    color: gold; 
+  }
+
 }
 
 @media (max-width: 768px) {

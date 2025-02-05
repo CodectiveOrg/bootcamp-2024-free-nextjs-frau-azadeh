@@ -60,13 +60,9 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
             <button
               key={star}
               onClick={() => handleRating(star)}
-              style={{
-                color: star <= finalRating ? "gold" : "gray",
-                fontSize: "20px",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-              }}
+              className={`${styles.ratingStar} ${
+                star <= finalRating ? styles.active : ""
+              }`}
             >
               ★
             </button>
