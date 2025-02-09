@@ -1,3 +1,4 @@
+/* ✅ کارت پزشک */
 .card {
   display: flex;
   align-items: center;
@@ -11,115 +12,159 @@
   transition:
     transform var(--transition),
     box-shadow var(--transition);
+}
 
-  &:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
-  }
+.card:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
+}
 
-  .imageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* ✅ سمت چپ: امتیاز و دکمه */
+.leftSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
 
-    .image {
-      width: 8rem;
-      height: 8rem;
-      border-radius: var(--border-radius);
-      object-fit: cover;
-    }
-  }
+.rating {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
 
-  .info {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
-    text-align: center;
-    justify-content: center;
+.button {
+  background-color: var(--color-button);
+  color: var(--color-container);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color var(--transition);
+}
 
-    .name {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: var(--color-dark-gray);
-    }
+.button:hover {
+  background-color: var(--color-button-hover);
+}
 
-    .detail {
-      font-size: 0.9rem;
-      color: var(--color-gray);
-    }
-  }
+.centerSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
 
-  .action {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: var(--gap);
+.name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 0.5rem;
-      padding: 0.5rem 1rem;
-      background-color: var(--color-button);
-      color: var(--color-container);
-      text-decoration: none;
-      border-radius: var(--border-radius);
-      font-size: 1rem;
-      text-align: center;
-      transition: background-color var(--transition);
-    }
-  }
+.featuresGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
 
-  .ratingStar {
-    font-size: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: gray;
-  }
+.featureCard {
+  background-color: var(--color-gray);
+  padding: 0.8rem;
+  border-radius: 8px;
+  width: calc(50% - 1rem);
+  text-align: center;
+}
 
-  .ratingStar.active {
-    color: gold;
-  }
+.rating {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.starContainer {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.star {
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star:hover,
+.star.active {
+  transform: scale(1.2);
+  color: var(--color-rating); 
+}
+
+.featureTitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
+
+.featureValue {
+  font-size: 1rem;
+  color: var(--color-light);
+  
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 2px solid var(--color-light-gray);
+}
+
+.rating {
+  color: var(--color-dark-gray);
+  font-size: 1rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    padding: calc(var(--padding) * 1.5);
+    align-items: center;
+  }
+
+  .leftSection {
+    align-items: center;
   }
 
   .imageContainer {
     margin-bottom: var(--gap);
   }
 
-  .info {
+  .centerSection {
     text-align: center;
-    justify-content: center;
-  }
-
-  .action {
     align-items: center;
   }
-}
 
-.ratingInput {
-  display: flex;
-  gap: 0.3rem;
-
-  button {
-    cursor: pointer;
-    transition: transform 0.2s ease;
-
-    &:hover {
-      transform: scale(1.2);
-    }
+  .featuresGrid {
+    flex-direction: column;
+    align-items: center;
   }
-}
 
-.rating {
-  color: var(--color-dark-gray);
+  .featureCard {
+    width: 100%;
+  }
 }
