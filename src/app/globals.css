@@ -12,9 +12,11 @@
   --color-container: hsl(0, 0%, 100%);
   --color-button: hsl(270deg, 50%, 20%);
   --color-hover: hsl(288deg, 96%, 90%);
-
+  --color-gray: hsl(50deg, 10%, 95%);
   --color-light-gray: hsl(0, 0%, 95%);
   --color-dark-gray: hsl(0, 0%, 25%);
+  --color-light: hsl(0, 2%, 52%);
+  --color-rating: hsl(51, 100%, 50%);
 
   --border-radius: 0.5rem;
   --padding: 1.5rem;
