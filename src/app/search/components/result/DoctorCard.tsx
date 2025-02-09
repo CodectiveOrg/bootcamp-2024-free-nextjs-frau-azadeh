@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import styles from "./doctorCard.module.css";
 import Link from "next/link";
-import StarRating from "./StarRating";
 
 interface DoctorCardProps {
   id: number;
@@ -27,28 +26,51 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
   defaultRating,
 }) => {
   const [finalRating, setFinalRating] = useState<number>(defaultRating);
+  const [hover, setHover] = useState<number | null>(null);
 
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         <img src={image} alt={name} className={styles.image} />
       </div>
-      <div className={styles.info}>
+      <div className={styles.centerSection}>
         <h3 className={styles.name}>{name}</h3>
-        <p className={styles.detail}>تخصص: {specialty}</p>
-        <p className={styles.detail}>جنسیت: {gender}</p>
-        <p className={styles.detail}>درجه: {degree}</p>
-        <p className={styles.detail}>زمان کار: {workTime}</p>
+        <div className={styles.featuresGrid}>
+          <div className={styles.featureCard}>
+            <p className={styles.featureTitle}>تخصص</p>
+            <p className={styles.featureValue}>{specialty}</p>
+          </div>
+          <div className={styles.featureCard}>
+            <p className={styles.featureTitle}>جنسیت</p>
+            <p className={styles.featureValue}>{gender}</p>
+          </div>
+          <div className={styles.featureCard}>
+            <p className={styles.featureTitle}>درجه</p>
+            <p className={styles.featureValue}>{degree}</p>
+          </div>
+          <div className={styles.featureCard}>
+            <p className={styles.featureTitle}>زمان کار</p>
+            <p className={styles.featureValue}>{workTime}</p>
+          </div>
+        </div>
       </div>
-      <div className={styles.action}>
+      <div className={styles.leftSection}>
         <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
-        <StarRating
-          id={id}
-          defaultRating={defaultRating}
-          onRatingChange={setFinalRating}
-        />
-        <Link href={`/doctor/${id}`} className={styles.button}>
-          نوبت دهی آنلاین
+        <div className={styles.starContainer}>
+          {[1, 2, 3, 4, 5].map((index) => (
+            <span
+              key={index}
+              className={`${styles.star} ${index <= (hover ?? finalRating) ? styles.active : ""}`}
+              onClick={() => setFinalRating(index)}
+              onMouseEnter={() => setHover(index)}
+              onMouseLeave={() => setHover(null)}
+            >
+              ★
+            </span>
+          ))}
+        </div>
+        <Link href={`/doctor/${id}`}>
+          <div className={styles.button}>نوبت دهی آنلاین</div>
         </Link>
       </div>
     </div>
