@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useFilterContext } from "../../context/FilterContext";
-import DoctorCard from "./DoctorCard";
+import {DoctorCard} from "./DoctorCard";
 
 const DoctorsList: React.FC = () => {
   const { doctors, degreeFilter, genderFilter } = useFilterContext();
