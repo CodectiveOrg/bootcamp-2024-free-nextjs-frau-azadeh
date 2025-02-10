@@ -12,7 +12,9 @@ import GuideSteps from "@/components/guide/GuideSteps";
 import StatsCards from "@/components/stats/StatsCards";
 
 // 👇 HeroSection را داینامیک بدون SSR لود می‌کنیم
-const HeroSection = dynamic(() => import("@/components/signin/HeroSection"), { ssr: false });
+const HeroSection = dynamic(() => import("@/components/signin/HeroSection"), {
+  ssr: false,
+});
 
 export default function Home(): ReactElement {
   return (

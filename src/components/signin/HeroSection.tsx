@@ -14,12 +14,7 @@ export default function HeroSection() {
       </div>
       <div className={styles.rightPanel}>
         <div className={styles.imageContainer}>
-          <Image
-            src={header1}
-            alt="Hero Image"
-            fill
-            priority
-          />
+          <Image src={header1} alt="Hero Image" fill priority />
         </div>
       </div>
     </div>
