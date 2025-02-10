@@ -9,7 +9,10 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.3s ease;
 }
 
 /* تغییر رنگ هنگام اسکرول */
@@ -21,7 +24,7 @@
 
 /* تغییر رنگ لینک‌ها هنگام اسکرول */
 .header.scrolled .navLink {
-  color: var(--color-container)!important;
+  color: var(--color-container) !important;
 }
 
 .header.scrolled .navLink:hover {
@@ -125,9 +128,7 @@
     .navLink {
       width: 100%;
       text-align: right;
-     
     }
-  
   }
 }
 
@@ -139,11 +140,11 @@
       flex-direction: row;
       position: static;
     }
-    
-    a.header_navLink__nGrNO  {
+
+    a.header_navLink__nGrNO {
       color: white !important;
-  }
-  
+    }
+
     .hamburger {
       display: none;
     }

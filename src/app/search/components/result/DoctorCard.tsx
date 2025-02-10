@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./doctorCard.module.css";
 import Link from "next/link";
-import {Rating} from "./Rating";
+import { Rating } from "./Rating";
 
 interface DoctorCardProps {
   id: number;
@@ -52,7 +52,10 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({
         </div>
       </div>
       <div className={styles.leftSection}>
-        <Rating defaultRating={defaultRating} onRate={(rating: number) => console.log(`Rated: ${rating}`)} />
+        <Rating
+          defaultRating={defaultRating}
+          onRate={(rating: number) => console.log(`Rated: ${rating}`)}
+        />
         <Link href={`/doctor/${id}`}>
           <div className={styles.button}>نوبت دهی آنلاین</div>
         </Link>

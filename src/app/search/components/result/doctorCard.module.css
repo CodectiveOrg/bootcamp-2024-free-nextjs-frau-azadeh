@@ -8,8 +8,10 @@
   padding: var(--padding);
   margin-bottom: var(--padding);
   box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
-  transition: transform var(--transition), box-shadow var(--transition);
-  
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
