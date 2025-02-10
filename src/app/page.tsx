@@ -1,4 +1,7 @@
+"use client";
+
 import { ReactElement } from "react";
+import dynamic from "next/dynamic";
 import GlobalSearchBoxComponent from "@/components/global-search-box/GlobalSearchBoxComponent";
 import MyDoctorLogo from "@/logo/my-doctor-logo";
 import styles from "./page.module.css";
@@ -8,10 +11,14 @@ import ReviewsSlider from "@/components/review/ReviewsSlider";
 import GuideSteps from "@/components/guide/GuideSteps";
 import StatsCards from "@/components/stats/StatsCards";
 
+// 👇 HeroSection را داینامیک بدون SSR لود می‌کنیم
+const HeroSection = dynamic(() => import("@/components/signin/HeroSection"), { ssr: false });
+
 export default function Home(): ReactElement {
   return (
     <div className={styles.home}>
-      <SliderComponent />
+      {/* <SliderComponent /> */}
+      <HeroSection />
       <br />
       <h1>
         <MyDoctorLogo />
