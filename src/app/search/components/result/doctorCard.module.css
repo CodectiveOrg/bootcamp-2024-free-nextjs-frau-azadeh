@@ -8,14 +8,12 @@
   padding: var(--padding);
   margin-bottom: var(--padding);
   box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
-}
-
-.card:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
+  transition: transform var(--transition), box-shadow var(--transition);
+  
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
+  }
 }
 
 .leftSection {
@@ -24,12 +22,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
-}
-
-.rating {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--color-dark-gray);
 }
 
 .button {
@@ -73,32 +65,6 @@
   text-align: center;
 }
 
-.rating {
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--color-dark-gray);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.starContainer {
-  display: flex;
-  gap: 0.3rem;
-}
-
-.star {
-  font-size: 22px;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.star:hover,
-.star.active {
-  transform: scale(1.2);
-  color: var(--color-rating); 
-}
-
 .featureTitle {
   font-size: 0.8rem;
   font-weight: bold;
@@ -108,7 +74,6 @@
 .featureValue {
   font-size: 1rem;
   color: var(--color-light);
-  
 }
 
 .imageContainer {
@@ -124,12 +89,6 @@
   border-radius: 1rem;
   object-fit: cover;
   border: 2px solid var(--color-light-gray);
-}
-
-.rating {
-  color: var(--color-dark-gray);
-  font-size: 1rem;
-  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
