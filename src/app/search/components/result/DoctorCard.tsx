@@ -1,8 +1,8 @@
 "use client";
-
-import React, { useState } from "react";
+import React from "react";
 import styles from "./doctorCard.module.css";
 import Link from "next/link";
+import {Rating} from "./Rating";
 
 interface DoctorCardProps {
   id: number;
@@ -15,7 +15,7 @@ interface DoctorCardProps {
   defaultRating: number;
 }
 
-const DoctorCard: React.FC<DoctorCardProps> = ({
+export const DoctorCard: React.FC<DoctorCardProps> = ({
   id,
   name,
   gender,
@@ -25,9 +25,6 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
   image,
   defaultRating,
 }) => {
-  const [finalRating, setFinalRating] = useState<number>(defaultRating);
-  const [hover, setHover] = useState<number | null>(null);
-
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -55,20 +52,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
         </div>
       </div>
       <div className={styles.leftSection}>
-        <p className={styles.rating}>امتیاز: {finalRating} از ۵</p>
-        <div className={styles.starContainer}>
-          {[1, 2, 3, 4, 5].map((index) => (
-            <span
-              key={index}
-              className={`${styles.star} ${index <= (hover ?? finalRating) ? styles.active : ""}`}
-              onClick={() => setFinalRating(index)}
-              onMouseEnter={() => setHover(index)}
-              onMouseLeave={() => setHover(null)}
-            >
-              ★
-            </span>
-          ))}
-        </div>
+        <Rating defaultRating={defaultRating} onRate={(rating: number) => console.log(`Rated: ${rating}`)} />
         <Link href={`/doctor/${id}`}>
           <div className={styles.button}>نوبت دهی آنلاین</div>
         </Link>
@@ -76,5 +60,3 @@ const DoctorCard: React.FC<DoctorCardProps> = ({
     </div>
   );
 };
-
-export default DoctorCard;
