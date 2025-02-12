@@ -4,8 +4,7 @@ import React from "react";
 import styles from "./signup.module.css";
 import SignupForm from "@/components/signin/SignupForm";
 import Image from "next/image";
-import header1 from "@/assets/slider/header1.webp"; // ایمپورت عکس
-
+import header1 from "@/assets/slider/header1.webp"; 
 export default function HeroSection() {
   return (
     <div className={styles.container}>

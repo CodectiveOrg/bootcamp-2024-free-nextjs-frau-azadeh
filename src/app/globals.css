@@ -39,6 +39,7 @@ select {
   font: inherit;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -46,7 +47,6 @@ html {
 body {
   background-color: var(--color-default-background);
   color: var(--color-default-foreground);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
