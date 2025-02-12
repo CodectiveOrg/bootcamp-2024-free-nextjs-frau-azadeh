@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import { Vazirmatn } from "next/font/google";
+
 import HeaderComponent from "@/components/header/HeaderComponent";
 import "@/styles/typography.css";
 import "./globals.css";
+import "../styles/fonts.css";
+
 import FooterComponent from "@/components/footer/FooterComponent";
 
-const vazirmatn = Vazirmatn({
-  subsets: ["latin", "arabic"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "کلینیک فوق تخصصی دیابلند",
@@ -22,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className={vazirmatn.className}>
+    <html lang="fa" dir="rtl" >
       <body>
         <HeaderComponent />
         <main>{children}</main>
