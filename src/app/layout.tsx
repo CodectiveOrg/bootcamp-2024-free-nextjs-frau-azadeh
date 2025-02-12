@@ -7,7 +7,6 @@ import "../styles/fonts.css";
 
 import FooterComponent from "@/components/footer/FooterComponent";
 
-
 export const metadata: Metadata = {
   title: "کلینیک فوق تخصصی دیابلند",
   description:
@@ -20,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" >
+    <html lang="fa" dir="rtl">
       <body>
         <HeaderComponent />
         <main>{children}</main>
