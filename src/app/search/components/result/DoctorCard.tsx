@@ -3,7 +3,7 @@ import React from "react";
 import styles from "./doctorCard.module.css";
 import Link from "next/link";
 import { Rating } from "./Rating";
-import Image from "next/image"; 
+import Image from "next/image";
 
 interface DoctorCardProps {
   id: number;
@@ -29,13 +29,13 @@ export const DoctorCard: React.FC<DoctorCardProps> = ({
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <Image 
-          src={image} 
-          alt={name} 
-          className={styles.image} 
-          width={150} 
-          height={150} 
-          priority 
+        <Image
+          src={image}
+          alt={name}
+          className={styles.image}
+          width={150}
+          height={150}
+          priority
         />
       </div>
       <div className={styles.centerSection}>
