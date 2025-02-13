@@ -1,79 +1,77 @@
-/* کانتینر اصلی */
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 40%;
   margin: 0 auto;
-  gap: 2rem;
-}
+  gap: var(--gap);
 
-/* بخش سوالات متداول */
-.faqs {
-  flex: 1 1 calc(50% - 1rem);
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-  font-size: 1.5rem;
-  color: #4a044e;
-  margin-bottom: 1rem;
-}
-
-.description {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-  text-align: justify;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.faq {
-  margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.question {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  padding: 0.5rem 0;
-  font-weight: bold;
-  color: #4a044e;
-}
-
-.icon {
-  font-size: 1.2rem;
-}
-
-.answer {
-  padding: 0.5rem 0;
-  color: #333;
-}
-
-/* بخش نظرات مشتریان */
-.reviews {
-  flex: 1 1 calc(50% - 1rem);
-}
-
-/* حالت ریسپانسیو */
-@media (max-width: 768px) {
-  .container {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: 1.5rem;
     width: 80%;
   }
+}
 
-  .faqs,
-  .reviews {
+.faqs {
+  flex: 1 1 calc(50% - 1rem);
+  background-color: var(--color-container);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px var(--color-shadow);
+
+  .title {
+    font-size: 1.5rem;
+    color: var(--color-title);
+    margin-bottom: 1rem;
+  }
+
+  .description {
+    font-size: var(--font-size);
+    color: var(--color-text);
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .faq {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+
+    .question {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      padding: 0.5rem 0;
+      font-weight: bold;
+      color: var(--color-radio);
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: var(--color-primary-dark);
+      }
+
+      .icon {
+        font-size: 1.2rem;
+      }
+    }
+
+    .answer {
+      padding: 0.5rem 0;
+      color: var(--color-text);
+    }
+  }
+}
+
+.reviews {
+  flex: 1 1 calc(50% - 1rem);
+
+  @media (max-width: 768px) {
     flex: 1 1 100%;
   }
 }

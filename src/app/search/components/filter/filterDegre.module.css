@@ -1,0 +1,64 @@
+.container {
+  margin-bottom: var(--gap);
+  padding: var(--padding);
+  background-color: var(--color-container);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.3rem 0.6rem var(--color-shadow);
+
+  .title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-title);
+    margin-bottom: var(--gap);
+  }
+
+  .radioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: var(--font-size);
+      color: var(--color-text);
+      cursor: pointer;
+      transition: color 0.2s ease-in-out;
+    }
+
+    .radioInput {
+      accent-color: var(--color-radio);
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid var(--color-border);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .count {
+      font-size: 0.9rem;
+      color: var(--color-text-light);
+      margin-left: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .radioGroup {
+    gap: 0.8rem;
+  }
+
+  .radioInput {
+    width: 1rem;
+    height: 1rem;
+  }
+}

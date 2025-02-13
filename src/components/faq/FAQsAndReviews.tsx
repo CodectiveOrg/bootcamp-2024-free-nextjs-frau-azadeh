@@ -40,7 +40,6 @@ const FAQsAndReviews: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      {/* بخش سوالات متداول */}
       <div className={styles.faqs}>
         <h2 className={styles.title}>سوالات متداول در مورد دیابت</h2>
         <p className={styles.description}>

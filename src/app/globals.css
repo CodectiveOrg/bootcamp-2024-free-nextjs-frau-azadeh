@@ -1,32 +1,27 @@
 :root {
-  --color-gray-98: hsl(0deg 0% 98%);
-  --color-gray-90: hsl(0deg 0% 90%);
-  --color-gray-80: hsl(0deg 0% 80%);
-  --color-gray-70: hsl(0deg 0% 70%);
-  --color-gray-40: hsl(0deg 0% 40%);
-  --color-gray-30: hsl(0deg 0% 30%);
-  --color-gray-20: hsl(0deg 0% 20%);
-  --color-gray-16: hsl(0deg 0% 16%);
-  --color-gray-12: hsl(0deg 0% 12%);
-  --color-gray-10: hsl(0deg 0% 10%);
+  --color-default-background: hsl(288deg, 96%, 98%);
+  --color-default-foreground: hsl(270deg, 50%, 20%);
+  --color-primary: hsl(120, 40%, 50%);
+  --color-primary-hover: hsl(120, 40%, 40%);
+  --color-text: hsl(0, 0%, 10%);
+  --color-border: hsl(0, 0%, 85%);
+  --color-input-bg: hsl(0, 0%, 98%);
+  --color-shadow: hsla(0, 0%, 0%, 0.1);
+  --color-title: hsl(270deg, 50%, 20%);
+  --color-radio: hsl(270deg, 50%, 20%);
+  --color-container: hsl(0, 0%, 100%);
+  --color-button: hsl(270deg, 50%, 20%);
+  --color-hover: hsl(288deg, 96%, 90%);
+  --color-gray: hsl(50deg, 10%, 95%);
+  --color-light-gray: hsl(0, 0%, 95%);
+  --color-dark-gray: hsl(0, 0%, 25%);
+  --color-light: hsl(0, 2%, 52%);
+  --color-rating: hsl(51, 100%, 50%);
 
-  --color-default-background: hsl(288deg, 96%, 91%);
-  --color-default-foreground: hsl(270deg 50% 95%);
-
-  --color-primary: hsl(270deg 60% 50%);
-  --color-primary-fade: hsl(270deg 60% 96%);
-  --color-primary-lighter: hsl(270deg 60% 65%);
-  --color-primary-darker: hsl(270deg 60% 35%);
-  --color-primary-opposite: hsl(270deg 50% 95%);
-
-  --border-radius: 0.875rem;
-
-  --full-width: 75rem;
-  --full-width-padding-inline: calc(max(100% - var(--full-width), 2rem) / 2);
-
-  --animation-duration-fast: 0.1s;
-  --animation-duration-normal: 0.5s;
-  --animation-duration-slow: 1s;
+  --border-radius: 0.5rem;
+  --padding: 1.5rem;
+  --gap: 1rem;
+  --font-size: 1rem;
 }
 
 *,
@@ -37,6 +32,13 @@
   padding: 0;
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -44,11 +46,11 @@ html {
 body {
   background-color: var(--color-default-background);
   color: var(--color-default-foreground);
-
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: vazir;
 }
 
 main {

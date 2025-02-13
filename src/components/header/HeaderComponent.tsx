@@ -1,24 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "./header.module.css";
+import MyDoctorLogo from "@/logo/my-doctor-logo";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
-  return (
-    <header className={styles.header}>
-      {/* عنوان سایت */}
-      <h1 className={styles.title}>دیابلند</h1>
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50); // وقتی اسکرول بیشتر از 50px شد، تغییر رنگ بدهد
+    };
 
-      {/* منو */}
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
+      <h1 className={styles.title}>
+        <MyDoctorLogo />
+        دیابلند
+      </h1>
       <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
         <ul className={styles.navList}>
           <li>
@@ -64,10 +75,8 @@ const HeaderComponent: React.FC = () => {
         </ul>
       </nav>
 
-      {/* دکمه ورود */}
       <button className={styles.cta}>ورود</button>
 
-      {/* آیکن همبرگری */}
       <div className={styles.hamburger} onClick={toggleMenu}>
         {menuOpen ? (
           <span>×</span>

@@ -1,22 +1,21 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Image from "next/image"; // استفاده از کامپوننت Image
-import slider from "@/assets/slider/slider.webp";
-import slider1 from "@/assets/slider/slider-1.webp";
-import slider2 from "@/assets/slider/slider-2.webp";
+import Image from "next/image";
+import header from "@/assets/slider/header.webp";
+import header1 from "@/assets/slider/header1.webp";
+import header2 from "@/assets/slider/header2.webp";
 import styles from "./slider.module.css";
 
 const SliderComponent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // آرایه تصاویر
-  const images = [slider, slider1, slider2];
+  const images = [header, header1, header2];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // تغییر تصویر هر 5 ثانیه
+    }, 5000);
     return () => clearInterval(interval);
   }, [images.length]);
 
@@ -28,12 +27,12 @@ const SliderComponent = () => {
           className={`${styles.slide} ${index === currentIndex ? styles.active : ""}`}
         >
           <Image
-            src={image} // استفاده از مسیر تصویر
-            alt={`Slide ${index}`} // متن جایگزین
+            src={image}
+            alt={`Slide ${index}`}
             className={styles["slide-image"]}
-            layout="fill" // پر کردن کانتینر
-            objectFit="cover" // مقیاس‌دهی تصویر برای پر کردن کل صفحه
-            priority // برای بارگذاری سریع‌تر تصویر اول
+            layout="fill"
+            objectFit="cover"
+            priority
           />
         </div>
       ))}

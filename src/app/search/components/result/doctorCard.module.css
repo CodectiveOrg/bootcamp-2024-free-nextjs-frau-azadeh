@@ -1,43 +1,127 @@
 .card {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+  background-color: var(--color-container);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  margin-bottom: var(--padding);
+  box-shadow: 0 0.25rem 0.5rem var(--color-shadow);
   transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    transform var(--transition),
+    box-shadow var(--transition);
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.4rem 0.6rem var(--color-shadow);
+  }
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 16px;
-}
-
-.info {
+.leftSection {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.button {
+  background-color: var(--color-button);
+  color: var(--color-container);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  text-align: center;
+  transition: background-color var(--transition);
+  margin-top: 1rem;
+}
+
+.centerSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
 }
 
 .name {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #333;
+  color: var(--color-dark-gray);
+  text-align: right;
+  padding-right: 1rem;
 }
 
-.detail {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 4px 0;
+.featuresGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.featureCard {
+  background-color: var(--color-gray);
+  padding: 0.8rem;
+  border-radius: 8px;
+  width: calc(50% - 1rem);
+  text-align: center;
+}
+
+.featureTitle {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--color-dark-gray);
+}
+
+.featureValue {
+  font-size: 1rem;
+  color: var(--color-light);
+}
+
+.imageContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 12rem;
+  height: 13rem;
+  border-radius: 1rem;
+  object-fit: cover;
+  border: 2px solid var(--color-light-gray);
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    text-align: center;
+    padding: calc(var(--padding) * 1.5);
+    align-items: center;
+  }
+
+  .leftSection {
+    align-items: center;
+  }
+
+  .imageContainer {
+    margin-bottom: var(--gap);
+  }
+
+  .centerSection {
+    text-align: center;
+    align-items: center;
+  }
+
+  .featuresGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featureCard {
+    width: 100%;
+  }
 }
