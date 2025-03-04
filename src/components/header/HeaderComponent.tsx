@@ -2,12 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation"; 
 import styles from "./header.module.css";
 import MyDoctorLogo from "@/logo/my-doctor-logo";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
+  const router = useRouter();  
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -17,12 +18,16 @@ const HeaderComponent: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50); // وقتی اسکرول بیشتر از 50px شد، تغییر رنگ بدهد
+      setScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLoginClick = () => {
+    router.push("/auth/sign-up");  
+  };
 
   return (
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
@@ -35,9 +40,7 @@ const HeaderComponent: React.FC = () => {
           <li>
             <Link
               href="/"
-              className={`${styles.navLink} ${
-                pathname === "/" ? styles.active : ""
-              }`}
+              className={`${styles.navLink} ${pathname === "/" ? styles.active : ""}`}
             >
               خانه
             </Link>
@@ -45,9 +48,7 @@ const HeaderComponent: React.FC = () => {
           <li>
             <Link
               href="/about"
-              className={`${styles.navLink} ${
-                pathname === "/about" ? styles.active : ""
-              }`}
+              className={`${styles.navLink} ${pathname === "/about" ? styles.active : ""}`}
             >
               درباره ما
             </Link>
@@ -55,9 +56,7 @@ const HeaderComponent: React.FC = () => {
           <li>
             <Link
               href="/contact"
-              className={`${styles.navLink} ${
-                pathname === "/contact" ? styles.active : ""
-              }`}
+              className={`${styles.navLink} ${pathname === "/contact" ? styles.active : ""}`}
             >
               تماس با ما
             </Link>
@@ -65,9 +64,7 @@ const HeaderComponent: React.FC = () => {
           <li>
             <Link
               href="/search"
-              className={`${styles.navLink} ${
-                pathname === "/search" ? styles.active : ""
-              }`}
+              className={`${styles.navLink} ${pathname === "/search" ? styles.active : ""}`}
             >
               تعیین وقت
             </Link>
@@ -75,7 +72,9 @@ const HeaderComponent: React.FC = () => {
         </ul>
       </nav>
 
-      <button className={styles.cta}>ورود</button>
+      <button className={styles.cta} onClick={handleLoginClick}>
+        ورود
+      </button>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
         {menuOpen ? (
