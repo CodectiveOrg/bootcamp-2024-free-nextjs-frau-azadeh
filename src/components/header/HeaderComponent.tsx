@@ -26,7 +26,7 @@ const HeaderComponent: React.FC = () => {
   }, []);
 
   const handleLoginClick = () => {
-    router.push("/auth/sign-up");  
+    router.push("/auth/sign-in");  
   };
 
   return (
