@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation"; 
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./header.module.css";
 import MyDoctorLogo from "@/logo/my-doctor-logo";
 
 const HeaderComponent: React.FC = () => {
   const pathname = usePathname();
-  const router = useRouter();  
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -26,7 +26,7 @@ const HeaderComponent: React.FC = () => {
   }, []);
 
   const handleLoginClick = () => {
-    router.push("/auth/sign-in");  
+    router.push("/auth/sign-in");
   };
 
   return (

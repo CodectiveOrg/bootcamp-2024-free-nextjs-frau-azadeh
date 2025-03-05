@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 
 export default function SignupForm() {
   const router = useRouter();
-  
+
   const handleSignInRedirect = () => {
     router.push("/auth/dashboard");
   };

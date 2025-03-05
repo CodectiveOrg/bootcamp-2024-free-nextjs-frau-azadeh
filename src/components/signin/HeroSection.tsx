@@ -7,12 +7,9 @@ import header1 from "@/assets/slider/header1.webp";
 export default function HeroSection() {
   return (
     <div className={styles.boxContainer}>
-       <div className={styles.imageContainer} >
-    <Image src={header1} alt="Hero Image" fill priority />
-  </div>
+      <div className={styles.imageContainer}>
+        <Image src={header1} alt="Hero Image" fill priority />
+      </div>
     </div>
-   
-  
-
   );
 }

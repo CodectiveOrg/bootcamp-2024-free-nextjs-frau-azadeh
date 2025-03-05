@@ -3,9 +3,13 @@ import styles from "./button.module.css";
 
 interface ButtonProps {
   text: string;
-  onClick: ()=> void;
+  onClick: () => void;
 }
 
 export default function Button({ text, onClick }: ButtonProps) {
-  return <button onClick={onClick} className={styles.button}>{text}</button>;
+  return (
+    <button onClick={onClick} className={styles.button}>
+      {text}
+    </button>
+  );
 }
