@@ -4,7 +4,8 @@ import styles from "./input.module.css";
 interface InputProps {
   label: string;
   type: string;
-  placeholder: string;
+  placeholder?: string;
+  autoComplete: string;
 }
 
 export default function Input({ label, type, placeholder }: InputProps) {

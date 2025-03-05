@@ -45,21 +45,3 @@
     }
   }
 }
-.boxContainer {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-
-  .imageContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .boxContainer {
-    height: 50vh;
-  }
-}
