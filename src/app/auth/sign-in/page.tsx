@@ -5,9 +5,8 @@ import Button from "@/components/signin/Button";
 import Input from "@/components/signin/Input";
 import { useRouter } from "next/navigation";
 
-export default function SignupForm() {
+export default function SignUpForm() {
   const router = useRouter();
-
   const handleSignInRedirect = () => {
     router.push("/auth/dashboard");
   };
