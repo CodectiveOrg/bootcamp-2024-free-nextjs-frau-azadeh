@@ -1,0 +1,47 @@
+.signinWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .signinContainer {
+    width: 90%;
+    max-width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background-color: var(--color-container);
+    box-shadow: 0rem 0.25rem 0.625rem var(--color-form);
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--color-title);
+      margin-bottom: 1rem;
+    }
+
+    .inputWrapper {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .buttonWrapper {
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--color-title);
+
+      a {
+        color: var(--color-link);
+        text-decoration: none;
+      }
+    }
+  }
+}
